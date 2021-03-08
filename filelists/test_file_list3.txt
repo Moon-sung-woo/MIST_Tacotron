@@ -1,0 +1,500 @@
+dataset/hap/wav/acriil_hap_00003022.wav|음악에 대한 진솔한 여행을 떠나는 무한도전 기다림이 더 즐거운 방송을 만들어 낸 것은 멤버들의 열정이었고 이것을 모두 뒤집은 것은 유재석의 대반전이 있었기 때문입니다.
+dataset/ang/wav/acriil_ang_00000270.wav|너무도 우연한 기회에 귀댁의 어려운 사정을 알게 돼 마음 아팠습니다.
+dataset/hap/wav/acriil_hap_00000514.wav|내 방은 대문간에서 세어서 똑 일곱째 칸이다.
+dataset/hap/wav/acriil_hap_00001617.wav|네 향기 가 그리웠다.
+dataset/hap/wav/acriil_hap_00000063.wav|군대도 갔다오고 삼학년인데 아주 착실하고 좋은 애죠.
+dataset/fea/wav/acriil_fea_00002386.wav|나는 부모님이 안 계셔서 숙모의 손에서 컸다.
+dataset/dis/wav/acriil_dis_00002504.wav|오늘 아침 고양이 시체를 봤더니 하루종일 기분이 찜찜하다.
+dataset/ang/wav/acriil_ang_00000904.wav|제도자체보다도 운영의 묘가 더 중요하다고 생각됩니다.
+dataset/ang/wav/acriil_ang_00002650.wav|그녀에게 아직 고백도 못 했는데 유학을 가버리다니.
+dataset/hap/wav/acriil_hap_00003359.wav|일년 십이개월 삼백육십오일 평생토록 이렇게 사랑하겠습니다.
+dataset/ang/wav/acriil_ang_00001872.wav|나는 매 년 잊지 않고 정기검진을 받는다.
+dataset/sur/wav/acriil_sur_00001482.wav|그렇게 열사람이 나서고 백사람이 끼어드는 사이 모자라지 않은 석유가 모자라게 되고 그틈에 폭리를 보려는 충동이 끼어들게 마련이다.
+dataset/fea/wav/acriil_fea_00001078.wav|정권퇴진을 요구하는 목소리들이 서슴없이 거리로 터져 나오고 있다.
+dataset/hap/wav/acriil_hap_00000768.wav|나는 도시의 겨울 풍경에 느닷없이 뭉클한 감동을 맛보았다.
+dataset/ang/wav/acriil_ang_00002084.wav|내가 서른 살이 되면 어떤 모습의 어른이 되어 있을까.
+dataset/dis/wav/acriil_dis_00002085.wav|넘치게 주신 팬들의 사랑에 감사드립니다.
+dataset/sur/wav/acriil_sur_00002126.wav|나는 아나운서 스타일의 여자가 좋다.
+dataset/fea/wav/acriil_fea_00000032.wav|그러나 이제는 이런 단순대결구도에만 집착해서는 안됩니다.
+dataset/sur/wav/acriil_sur_00000808.wav|중국과의 관계도 소련처럼 정부간의 기관설치 형태로 이뤄져야 한다는 것이 우리 기본입장입니다.
+dataset/sur/wav/acriil_sur_00002937.wav|할머니는 음식을 남기는 것을 굉장히 싫어하신다.
+dataset/ang/wav/acriil_ang_00002942.wav|물가는 지난 달부터 전혀 변동이 없다.
+dataset/hap/wav/acriil_hap_00002798.wav|나는 나의 아버지가 만일 고아들을 위하여 도둑질을 하다가 감옥살이를 한 대도 나는 아버지를 사랑할 수 있을 것 같았다.
+dataset/sad/wav/acriil_sad_00002624.wav|나는 수박을 씨까지 다 먹는다.
+dataset/hap/wav/acriil_hap_00002968.wav|화려한 준비성을 보여 준다면 승산이 있다고 할 수 있습니다.
+dataset/neu/wav/acriil_neu_00001278.wav|부산 여론을 들어 보니 하루가 다르게 민자당의 가는 길이 옳고 나의 결단이 잘된 것이라고 평가하는 쪽으로 가고 있다.
+dataset/sad/wav/acriil_sad_00001826.wav|그 아이들의 대부분은 고아이다.
+dataset/sad/wav/acriil_sad_00002942.wav|물가는 지난 달부터 전혀 변동이 없다.
+dataset/dis/wav/acriil_dis_00000986.wav|굉장히 복잡한 문제다.
+dataset/neu/wav/acriil_neu_00000842.wav|우리는 정치인들의 말을 믿었고 또 그 정치인들은 사담 후세인을 믿었던 것 같다.
+dataset/neu/wav/acriil_neu_00001280.wav|재야의 정치세력화는 어떻게 이룰 것인가.
+dataset/hap/wav/acriil_hap_00000763.wav|김씨가 갑자기 허허허허 하고 웃는다.
+dataset/sur/wav/acriil_sur_00002226.wav|나는 혼자 밥 먹는 걸 정말 싫어한다.
+dataset/fea/wav/acriil_fea_00000051.wav|지난해 십이월 이십삼일 엘에이를 출발 일본 중국을 거쳐 이십사일에 평양에 도착해 평양 개성 등지에서 십일간 머물렀다.
+dataset/hap/wav/acriil_hap_00000944.wav|이런 생기발랄한 무대가 바로 스케치북의 매력이다.
+dataset/sad/wav/acriil_sad_00002470.wav|이 나이가 되도록 아직 부모로부터 경제적으로 독립하지 못 해 창피하다.
+dataset/ang/wav/acriil_ang_00002656.wav|용산 전자상가에는 수많은 전자제품 가게들이 줄지어 있다.
+dataset/dis/wav/acriil_dis_00000809.wav|앞으로 대중국 관계개선에 모든 외교적 노력을 집중해야겠지요.
+dataset/neu/wav/acriil_neu_00001842.wav|텍사스가 알래스카보다 인구가 많다.
+dataset/ang/wav/acriil_ang_00000031.wav|평생 저는 독재 대 반독재 민주 대 반민주의 대결구도 속에서 싸워 온 사람입니다.
+dataset/neu/wav/acriil_neu_00000783.wav|그쪽에서 십일월 일일부터 교섭에 들어가자는 얘기가 있었다.
+dataset/neu/wav/acriil_neu_00001956.wav|남자친구로부터 예상치 못한 프로포즈를 받았다.
+dataset/dis/wav/acriil_dis_00002106.wav|첫눈이 내리면 시계탑 앞에서 만나자.
+dataset/hap/wav/acriil_hap_00002525.wav|나는 배가 고프면서도 적이 마음이 든든한 것을 좋아했다.
+dataset/hap/wav/acriil_hap_00001134.wav|가끔 사랑이란 달콤하다.
+dataset/fea/wav/acriil_fea_00002388.wav|잃어버렸던 다이아 반지를 찾아서 너무 기쁘다.
+dataset/sad/wav/acriil_sad_00002094.wav|지난 십년은 길고도 짧은 세월이었다.
+dataset/neu/wav/acriil_neu_00002616.wav|미안하지만 선반 위에 있는 상자 좀 내려주시겠어요.
+dataset/ang/wav/acriil_ang_00000413.wav|또 비장한 죽음의 이미지가 따른다.
+dataset/fea/wav/acriil_fea_00000447.wav|지금까지 미국은 열여덟개의 노벨경제학상을 받았다.
+dataset/neu/wav/acriil_neu_00001793.wav|나는 소식과 운동으로 십키로를 뺐다.
+dataset/ang/wav/acriil_ang_00002441.wav|남편이 대머리가 될 조짐이 보여 걱정이다.
+dataset/dis/wav/acriil_dis_00000143.wav|구체적인 얘기는 안하겠다.
+dataset/sad/wav/acriil_sad_00001710.wav|오일간이나 회의를 했지만 결론은 끝내 나지 않았다.
+dataset/neu/wav/acriil_neu_00000507.wav|드골과 회담을 잘하려면 프랑스 말을 잘해야 한다고 믿은 때문이었다.
+dataset/sad/wav/acriil_sad_00001569.wav|이 자동차는 성능으로 보나 디자인으로 보나 나무랄 데가 없다.
+dataset/ang/wav/acriil_ang_00002960.wav|국민은 이 선수에게 금메달의 기대를 걸고 있다.
+dataset/dis/wav/acriil_dis_00001402.wav|정부가 정권차원에서 단속하려 들면 못할 것이 없다.
+dataset/hap/wav/acriil_hap_00002592.wav|그녀는 아주 반가운 듯한 얼굴을 하고 여태 어디들 처박혀 있었어 아까부터 아무리 찾아두 원 다들 부처님 참배는 했나 하고 말했다.
+dataset/ang/wav/acriil_ang_00000399.wav|한데 올해 중추를 기하여 진짜 달을 소유하게 됐다.
+dataset/dis/wav/acriil_dis_00000440.wav|너무 이론이 어려워서인가 했더니 증권가에서는 누구나 다 알고 있는 상식적인 이론들이다.
+dataset/hap/wav/acriil_hap_00001602.wav|겨울 겨울 겨울 겨울 갑자기 겨울 눈이 그리웠다.
+dataset/neu/wav/acriil_neu_00002274.wav|세익스피어는 많은 희곡을 썼다.
+dataset/sur/wav/acriil_sur_00000572.wav|아울러 여야 정당과 정치인들은 정치가 정치게임 자체를 위해서만 존재하는 것처럼 착각해선 안된다.
+dataset/sur/wav/acriil_sur_00001773.wav|오랫동안 고민해서 선물을 골랐는데 상대방이 전혀 기뻐하지 않았다.
+dataset/hap/wav/acriil_hap_00002226.wav|그는 누구보다도 더 잘 사랑할 수 있다고 믿었다.
+dataset/hap/wav/acriil_hap_00000340.wav|하여간 십년 숙망을 겨우 달한 화공의 심사는 무엇에 비기지 못하도록 기뻤다.
+dataset/fea/wav/acriil_fea_00000971.wav|요즘 한국의 대소 분위기를 보면 너무 요란하고 부산을 떠는 것 같은데 이럴수록 실리를 찾아야 되는 것 아닙니까.
+dataset/dis/wav/acriil_dis_00000550.wav|방송에서 사용되는 말은 표준말이어야 하고 게다가 품위가 있어야 하며 알아듣기 쉽고 분명해야 하며 자연스러워야 한다.
+dataset/fea/wav/acriil_fea_00002521.wav|이번 월드컵 대회에서 우리나라는 조편성에서 유리하게 되었다.
+dataset/neu/wav/acriil_neu_00001451.wav|야생조수는 지난 팔십삼년 조수보호 및 수렵에 관한 법률이 제정된 이래 자연보호운동과 더불어 지도계몽활동이 번져 그 보호에 많은 실효를 거둬 왔다.
+dataset/sur/wav/acriil_sur_00000911.wav|그 기간에 우리나라 현대정치사에는 굴곡이 많았어요.
+dataset/neu/wav/acriil_neu_00002308.wav|너무 늦어서 이만 집에 돌아가 봐야 할 것 같아.
+dataset/ang/wav/acriil_ang_00002692.wav|이 강좌의 신청 마감은 오늘 다섯시까지입니다.
+dataset/fea/wav/acriil_fea_00000955.wav|이총재는 두 후보는 물론 당내 여러 동지들과 상의해 그분들이 부총재를 수락하도록 할 생각입니다.
+dataset/dis/wav/acriil_dis_00001701.wav|여당이든 야당이든 나는 정치에는 흥미가 없다.
+dataset/neu/wav/acriil_neu_00002169.wav|예전에는 주로 속독으로 책을 읽었으나 요새는 정독으로 읽는다.
+dataset/fea/wav/acriil_fea_00002753.wav|어제 백화점에서 왜 그렇게 충동구매를 해버렸을까.
+dataset/ang/wav/acriil_ang_00001953.wav|친구들이 내 생일날 깜짝파티를 해주었다.
+dataset/sad/wav/acriil_sad_00002013.wav|저는 새로운 것을 시도하거나 새로운 기술을 배우는 걸 아주 좋아해요.
+dataset/hap/wav/acriil_hap_00001350.wav|처음에 썼다시피 무료배포용 카드텍이 많아서 기뻤습니다.
+dataset/fea/wav/acriil_fea_00001497.wav|페르시아만의 전쟁은 엄청난 규모의 인명을 희생시킨다 비극이다.
+dataset/ang/wav/acriil_ang_00001370.wav|지력강화를 위한 대책은 땅에 유기물함량을 높이는 길밖에 없으며 이를 위한 정부의 장기대책과 함께 농민들의 배전의 노력이 뒤따라야 한다.
+dataset/fea/wav/acriil_fea_00002987.wav|앞니 바로 옆을 차지하고 있는 치아는 송곳니 앞니가 벌어진 상태로 나오는 것은 송곳니와 같은 주변 치아들이 뼈 속에서 앞니의 뿌리를 밀고 있기 때문이다.
+dataset/dis/wav/acriil_dis_00000344.wav|고양이 소리만 들어도 모두 벌벌 떨었다.
+dataset/hap/wav/acriil_hap_00000052.wav|서울을 떠나 보고 싶다거나 남편 곁을 떠나 보고 싶다거나 하느니보다는 여지껏 악착같이 집착했던 내가 이룩한 생활을 헌신짝처럼 차 버리고 훨훨 자유로와지고 싶었다.
+dataset/ang/wav/acriil_ang_00001174.wav|동유럽의 실재하는 사회주의 국가는 거의 다 몰락했다.
+dataset/hap/wav/acriil_hap_00003095.wav|강을 무사히 건너가면 모든 것을 잊어버리고 다시 국경경비대 녀석들의 때 아닌 돌발 상황을 예견하며 한 걸음 한 걸음 총검의 숲을 헤치 군하는 그런 버릇을 가졌던 것이다.
+dataset/sad/wav/acriil_sad_00000075.wav|우리 앞에 어떤 가능성도 배제하지 말자.
+dataset/fea/wav/acriil_fea_00000365.wav|이십년 동안이나 적금을 부어 나간다는 건 보통 정성이 아니다.
+dataset/sad/wav/acriil_sad_00002509.wav|진학문제에 관해 담임선생님과 상담을 했다.
+dataset/hap/wav/acriil_hap_00003115.wav|청운이 빙긋이 웃으며 도로 물었다.
+dataset/fea/wav/acriil_fea_00000100.wav|유신과 오공치하에서 국민들이 많은 고난을 당했지만 나도 엄청난 고통을 받았다.
+dataset/sad/wav/acriil_sad_00002152.wav|일본의 음식은 대체로 담백한 편이다.
+dataset/neu/wav/acriil_neu_00001126.wav|노대통령의 헌법에 보장된 임기는 보장돼야 한다.
+dataset/fea/wav/acriil_fea_00000586.wav|이런 모든 현안 문제들은 결국 우리가 보기에는 결코 양국간의 기본적 현안은 아닐 것이다.
+dataset/fea/wav/acriil_fea_00002661.wav|이 빵은 너무 딱딱해서 마치 돌을 씹는 것 같다.
+dataset/neu/wav/acriil_neu_00001914.wav|나는 특이한 이름 때문에 항상 놀림거리가 된다.
+dataset/fea/wav/acriil_fea_00002783.wav|나는 천편일률적인 티비 프로들에 질렸다.
+dataset/sad/wav/acriil_sad_00002886.wav|항상 꼴찌만 하던 그 학생이 일등을 하다니 놀라지 않을 수 없다.
+dataset/dis/wav/acriil_dis_00002768.wav|기업의 가치를 결정짓는 자본은 인적자본이다.
+dataset/sur/wav/acriil_sur_00001570.wav|틀림없이 두 사람은 결혼할 거라고 생각했는데 헤어졌다는 소식에 깜짝 놀랐다.
+dataset/fea/wav/acriil_fea_00000670.wav|세계적으로 가장 어려운 기술중 하나로 평가되는 디지털 녹화기술까지 개발할 정도이다.
+dataset/ang/wav/acriil_ang_00001874.wav|땡볕에서 매일 일했더니 얼굴에 주근깨가 생겼다.
+dataset/dis/wav/acriil_dis_00000734.wav|지자제 문제가 가장 첨예한 쟁점인 만큼 이 문제에 대한 최대 공약수를 추출하는 것이 중요하다.
+dataset/sur/wav/acriil_sur_00001157.wav|어제 내 얘기를 들었던 기자들이 내가 무슨 뜻으로 그런 말을 했는지 분위기를 잘 알것 아니냐며 애써 자신의 강성발언을 톤다운시키려는 어조였다.
+dataset/fea/wav/acriil_fea_00002636.wav|기차 창밖으로 보이는 들판의 경치가 몹시 아름답다.
+dataset/sad/wav/acriil_sad_00001609.wav|아이들에 대한 체벌은 상황에 따라서 필요하기도 하다.
+dataset/sad/wav/acriil_sad_00000866.wav|이승윤 부총리겸 경제기획원 장관은 중동사태를 좀더 지켜봐야겠지만 현재 상황으로는 크게 우려할 단계는 아니라고 본다고 말한다.
+dataset/hap/wav/acriil_hap_00003079.wav|그런데 젊은이들의 우상인 이승기가 솔선수범하여 이 착한 아버지들을 챙기고 먼저 다가서고 칭찬하고 높여 주었으니 아이들의 마음이 얼마나 뿌듯하고 자랑스러웠을까요.
+dataset/dis/wav/acriil_dis_00000626.wav|의석에 있었으나 회사를 위해 경제활동을 하는 데 거의 대부분을 보냈다.
+dataset/fea/wav/acriil_fea_00001090.wav|외무부차원에서 내가 고르바초프대통령을 만난 이후 충분히 노력하고 있는 것으로 안다.
+dataset/hap/wav/acriil_hap_00000541.wav|내게는 이 서글픈 분위기가 거리의 티이루움들의 그 거추장스러운 분위기보다는 절실하고 마음에 들었다.
+dataset/sad/wav/acriil_sad_00002538.wav|선생님 죄송하지만 한번만 더 설명해 주세요.
+dataset/hap/wav/acriil_hap_00003845.wav|결혼하는 사람에게 감동을 주는 축하문자는 두고두고 친밀감의 싹을 움트게 해준다.
+dataset/ang/wav/acriil_ang_00001149.wav|소위 민주계니 하는데 그것부터 고치려고 한다.
+dataset/neu/wav/acriil_neu_00001148.wav|무슨 이유인지 자세히는 모르겠으나 회의불참의 진의와 겉으로 알려진 이유와는 차이가 있는 것으로 알고 있다.
+dataset/sur/wav/acriil_sur_00001566.wav|어린이라 하더라도 자기가 한 일에는 책임을 져야 한다.
+dataset/sur/wav/acriil_sur_00001880.wav|많은 사람들이 기후변화가 어떤 부작용을 낳을지 두려워하고 있다.
+dataset/sad/wav/acriil_sad_00000578.wav|다만 하나 고려될 수 있는 요인은 팔십오년 이후 장기간 공공요금이 불합리하게 억제되어 온 점과 페르시아만사태 이후의 원유가 급등이라는 현실적 요인이다.
+dataset/neu/wav/acriil_neu_00001146.wav|여러가지 경위가 있겠지만 구체적인 것은 서울에 가서 얘기를 들어 볼 계획이다.
+dataset/neu/wav/acriil_neu_00001660.wav|현재 세계적으로 자녀를 적게 두는 것이 추세이다.
+dataset/hap/wav/acriil_hap_00002996.wav|인연만큼 사람만큼 귀한 것도 없으니까요.
+dataset/fea/wav/acriil_fea_00000690.wav|지난 이십년간 기업을 경영해 온 기업인으로서 마지막으로 문화사업에 참여해 보고 싶은 생각에 신청을 결심하게 됐다.
+dataset/dis/wav/acriil_dis_00001347.wav|회사가 존폐 위협을 받는 한이 있더라도 이번사태는 근절돼야 한다.
+dataset/neu/wav/acriil_neu_00001936.wav|난 더 이상 이런 불평등을 참을 수 없어.
+dataset/sad/wav/acriil_sad_00001000.wav|그렇게 생각하기 때문에 내 신념이나 뜻을 누르고 공정한 사회자가 되도록 최선을 다할 겁니다.
+dataset/hap/wav/acriil_hap_00000559.wav|나는 장인님이 너무나 고마워서 어느덧 눈물까지 났다.
+dataset/sad/wav/acriil_sad_00000749.wav|이창호 사단은 스승인 조훈현 구단을 꺾고 국수가 된 뒤 대국 전에는 질 것 같은 기분이 들었으나 막상 최고권위의 국수가 되고 보니 기쁘다고 소감을 밝혔다.
+dataset/dis/wav/acriil_dis_00002553.wav|그에게 바람맞고 나서 너무 분해서 엉엉 울었다.
+dataset/fea/wav/acriil_fea_00002018.wav|화장실에 갔다 오면 손을 깨끗이 씻어라.
+dataset/sur/wav/acriil_sur_00001370.wav|지력강화를 위한 대책은 땅에 유기물함량을 높이는 길밖에 없으며 이를 위한 정부의 장기대책과 함께 농민들의 배전의 노력이 뒤따라야 한다.
+dataset/neu/wav/acriil_neu_00000017.wav|미안한 얘기지만 프랑스와 독일 영국 스위스 등 우리보다 월등하게 선진적인 정치사회에서 배우고 채택할 것은 채택해야 한다.
+dataset/sur/wav/acriil_sur_00002189.wav|반복되는 일상이 내 인생을 점점 재미없게 만들고 있다.
+dataset/hap/wav/acriil_hap_00002649.wav|너희들이 아다시피 우리 반이 이학년 전체에서 제일이거든.
+dataset/fea/wav/acriil_fea_00000873.wav|대체로 안전하게 지내고 있다 대사관에 스물네시간 상주하는 교민도 있고 집과 대사관을 왕래하는 사람들도 있어 대체로 백명 안팎이 대사관에 머물고 있는 셈이다.
+dataset/ang/wav/acriil_ang_00001239.wav|생산성 향상은 노동의욕 애사심 기술개발 경영 등이 전체적으로 어우러져 나오는 결과이므로 이 같은 여건이 얼마나 잘 마련되느냐에 달렸다고 본다.
+dataset/sad/wav/acriil_sad_00001621.wav|아무리 구인 광고지를 들여다봐도 괜찮은 일자리가 하나도 없다.
+dataset/dis/wav/acriil_dis_00001618.wav|죄송하지만 월요일에 만나기로 한 약속을 금요일로 변경해도 될까요.
+dataset/neu/wav/acriil_neu_00001027.wav|잘했든 못했든 간에 이처럼 물의를 일으켜 그 같은 보루가 무너져 버린 것 같아 안타깝기 그지 없습니다.
+dataset/dis/wav/acriil_dis_00002608.wav|그는 화가 나면 주위의 물건을 다 던지고 부수는 못된 성미가 있다.
+dataset/hap/wav/acriil_hap_00001645.wav|누나도 널 볼 수 있어서 너무 기뻐.
+dataset/neu/wav/acriil_neu_00000028.wav|새해 정계개편 바람의 진원지는 민주당이다.
+dataset/dis/wav/acriil_dis_00000198.wav|두 분의 말씀을 듣다보니까 새삼 한국학연구에 있어서 연계체제의 필요성을 느끼게 됩니다.
+dataset/fea/wav/acriil_fea_00002160.wav|사람마다 아픔을 견디는 방법이 다르다.
+dataset/hap/wav/acriil_hap_00000786.wav|에스는 나를 쳐다보며 빙그레 웃었다.
+dataset/hap/wav/acriil_hap_00001124.wav|남을 행복하게 할 수 있는 자만이 또한 행복을 얻는다.
+dataset/fea/wav/acriil_fea_00002228.wav|그는 사람을 죽이고도 죄책감이 없는 냉혈한이다.
+dataset/sur/wav/acriil_sur_00002223.wav|어제 하루종일 이삿짐을 날랐더니 팔다리가 쑤셔서 견딜 수가 없다.
+dataset/ang/wav/acriil_ang_00000405.wav|임의단체인 국어연구소를 승격시켜 명실 상부한 국가의 어문정책을 반영하게 된 것이다.
+dataset/fea/wav/acriil_fea_00001332.wav|가벼운 사안으로 현대중공업노조 간부들은 잇따라 구속하고 한국방송공사 노조원은 전원 석방한 것이 현장 노동자들의 가슴에 불을 질렀다.
+dataset/fea/wav/acriil_fea_00001798.wav|불법 사냥꾼들은 코끼리의 상아를 얻기 위해 그들을 죽였다.
+dataset/dis/wav/acriil_dis_00001367.wav|이에 따라 산재보험의 혜택을 받을 근로자는 지금의 칠백 오십육만여명에서 올 칠월부터는 팔백여만명 구십이년 칠월부터는 팔백 이십만여명으로 늘어나게 된다.
+dataset/ang/wav/acriil_ang_00000696.wav|첫째는 국민이 지지하고 야당이 동의하면 내각제 개헌을 해도 좋다는 것이었다.
+dataset/sad/wav/acriil_sad_00000738.wav|내주 중반부터는 공식접촉이 시작될 수 있을 것이다.
+dataset/sad/wav/acriil_sad_00002217.wav|냄새나니까 나한테 가까이 오지 마.
+dataset/sad/wav/acriil_sad_00000706.wav|김 대표가 자신이 노 대통령을 만났을 때 개헌을 하려면 의원 칠십퍼센트가 찬성해야 하고 국민과반수가 이를 지지해야 하는데 현재 분위기로는 불가하다는 점을 말했다고 하기에 나도 동감을 표시했다.
+dataset/sad/wav/acriil_sad_00000166.wav|북한은 경제면에서도 소련에 육십퍼센트이상 의존하고 있는 만큼 소련 북한간의 경제관계가 어려워지면 북한 내부의 체제개선 흐름도 강화될 것으로 보입니다.
+dataset/hap/wav/acriil_hap_00001450.wav|당신을 사랑한다고 느끼는 순간 당신은 이미 그 자리에 없었어요.
+dataset/sur/wav/acriil_sur_00001927.wav|꿈에서라도 그와 한 번만 연인이 되어봤으면.
+dataset/dis/wav/acriil_dis_00001408.wav|정치적인 요구와 주장은 노사협상의 대상이 될 수 없다.
+dataset/sad/wav/acriil_sad_00001023.wav|감사관의 감사도 소리내지 않고 조용하게 진행돼야 합니다.
+dataset/neu/wav/acriil_neu_00000539.wav|물론 우리는 종토세제가 국회의 인기영합과 졸속 심의 때문에 몇가지 문제들이 여과 없이 의결된 점을 부인하지 않는다.
+dataset/neu/wav/acriil_neu_00000531.wav|법도 있는 가문에서는 서푼앓이를 참아야 한다는 동자훈이 있었다.
+dataset/sad/wav/acriil_sad_00000118.wav|미군철수에 앞서 주한미군 부대에서 일하는 이만오천여명의 한국인 노동자들에 대한 사후대책을 마련해 달라는 것입니다.
+dataset/ang/wav/acriil_ang_00000213.wav|앞으로 한국 측의 참여로 그 보고가 열리게 되면 두 나라 관계의 핵심적인 부분이 될 것입니다.
+dataset/neu/wav/acriil_neu_00002955.wav|나는 과장님의 날카로운 판단력에 항상 감동하고 있다.
+dataset/hap/wav/acriil_hap_00000688.wav|삼대까지 거슬러 올라간 자세한 자기소개와 함께 친척을 찾은 벅찬 감격으로 다소 흥분한 육촌의 편지를 받은 게 재작년이었다.
+dataset/hap/wav/acriil_hap_00002220.wav|입술을 갖다 대자 대뜸 그녀의 입술이 열리던 생각을 하고 그는 빙그레해진다.
+dataset/sad/wav/acriil_sad_00000828.wav|남북 사이클선수단이 합동훈련을 한 사실이 남쪽신문에 크게 보도되었는데요.
+dataset/sad/wav/acriil_sad_00001428.wav|과연 이런 정부의 구상이 맞아들어 갈지는 개편된 여신관리 정책과 이에 따른 주력기업 선정의 각종 문제점 등이 어떻게 빠른 시일내에 보완되느냐에 달려 있다.
+dataset/hap/wav/acriil_hap_00001258.wav|이뻐해주셔서 감사합니다 아 편지지도 너무 이뻐요 제 스퇄 이에요.
+dataset/hap/wav/acriil_hap_00002813.wav|요한씨가 어떻게 생각하시든 저는 요한씨를 사랑하고 있어요.
+dataset/fea/wav/acriil_fea_00002453.wav|그녀가 웃을 때마다 생기는 보조개는 정말 귀엽다.
+dataset/hap/wav/acriil_hap_00001641.wav|너가 말을 좋게 해서 기뻐.
+dataset/sur/wav/acriil_sur_00002735.wav|치한이 가장 많은 것은 아무래도 전철 안이다.
+dataset/neu/wav/acriil_neu_00001472.wav|그러나 민자당내의 수구세력과 안기부가 크게 제동을 걸고 있어 어떻게 이 약속을 지켜 나갈지 주목된다.
+dataset/hap/wav/acriil_hap_00003599.wav|함께 맞는 첫 눈이라 기념으로 우산없이 펑펑 쏟아지는 눈을 실컷 맞고 눈사람도 만들었다.
+dataset/hap/wav/acriil_hap_00003596.wav|이 세상에서 가장 행복한 사람은 작은 재산을 가지고 만족해 하는 사람이다.
+dataset/sur/wav/acriil_sur_00002462.wav|어젯밤 컴퓨터를 너무 많이 해서 목이 뻐근하다.
+dataset/sur/wav/acriil_sur_00002380.wav|전화기는 천팔백칠십육년에 벨에 의해 발명되었다.
+dataset/ang/wav/acriil_ang_00001216.wav|돈을 받고 피를 팔던 매혈자가 국립보건원 검사결과 후천성면역결핍증 감염자로 밝혀졌다.
+dataset/fea/wav/acriil_fea_00002608.wav|그는 화가 나면 주위의 물건을 다 던지고 부수는 못된 성미가 있다.
+dataset/fea/wav/acriil_fea_00000650.wav|정낙씨는 범인이 붙잡히자 그때부터는 줄곧 병원에 매달려 요행을 기대하면서까지 형의 소생을 바랐으나 결국 뇌부종증에 어쩔 도리가 없었다.
+dataset/fea/wav/acriil_fea_00001938.wav|라디오에서 들은 사연이 너무 안타까워 나도 모르게 눈물이 났다.
+dataset/hap/wav/acriil_hap_00001041.wav|그 어떤 기다림이 이렇게 만족스러울 수 있는지 정석을 보여준 방송이었습니다.
+dataset/ang/wav/acriil_ang_00002871.wav|선수 생활 십년 동안 그는 쉬지 않고 오로지 야구만 생각해왔다.
+dataset/hap/wav/acriil_hap_00000330.wav|행여나 길에서라도 미녀를 만날까 하는 요행심으로였다.
+dataset/hap/wav/acriil_hap_00002893.wav|최대한 정갈하고 깔끔한 상태를 유지해서 보내 주라는 말이지요.
+dataset/sur/wav/acriil_sur_00000364.wav|적금에 가입할 때의 약관에는 이자율이 바뀌면 지급액이 달라질 수 있다는 깨알 같은 글씨가 적혀 있다고 한다.
+dataset/sur/wav/acriil_sur_00000355.wav|그만큼 우리에게 있어 부동산 문제는 정치와 또 다른 차원의 첨예한 이슈이자 시급히 고삐를 잡아야 할 절박한 현안인 것이다.
+dataset/neu/wav/acriil_neu_00000987.wav|한국민 적어도 남한사람들은 소련이 북한의 남침을 지원한 것과 칼기 격추사건에 관해 나쁜 감정을 갖고 있다.
+dataset/hap/wav/acriil_hap_00001960.wav|혜원이도 오늘은 세개나 무대에 선다고 하고 살짝 설레는 마음이 드는데요.
+dataset/ang/wav/acriil_ang_00000799.wav|북경에서 벌어지고 있는 일은 분명히 감동적이다.
+dataset/sur/wav/acriil_sur_00001590.wav|가족들이 열심히 간병한 보람도 없이 할머니는 돌아가시고 말았다.
+dataset/fea/wav/acriil_fea_00001682.wav|어린 아이도 알고 있는 것을 어른인 당신이 몰랐다니.
+dataset/dis/wav/acriil_dis_00001573.wav|남녀평등이 되었다고는 하지만 여전히 여성인 내가 사회에서 일하는 데는 불공평한 면이 많다.
+dataset/ang/wav/acriil_ang_00002545.wav|다음달은 임시주총이 있을 예정이니 참석해 주시기 바랍니다.
+dataset/sur/wav/acriil_sur_00000057.wav|황 교수는 단편적 지식의 측정보다는 이해력과 응용력 사고력을 재는 문제에 치중했다면서 제이외국어와 실업 사회 과학 등 선택과목들은 난이도의 균형을 맞추도록 출제위원들이 노력했다고 덧붙였다.
+dataset/hap/wav/acriil_hap_00001155.wav|학원샘 모두들 한달동안 참 행복했드랬슴돠.
+dataset/fea/wav/acriil_fea_00000457.wav|광화문앞 옛 도청 자리에는 손이 많이 가는 값진 소나무 소공원이 있다.
+dataset/neu/wav/acriil_neu_00002028.wav|나는 사랑한다는 말을 하는 것이 너무 어렵다.
+dataset/dis/wav/acriil_dis_00001246.wav|노동계 전체에 태풍의 눈으로 떠오르고 있는 전국노동조합협의회의 결성이 눈앞에 다가 왔다.
+dataset/ang/wav/acriil_ang_00002186.wav|한번 무너진 신뢰를 회복하기 위해서는 아주 오랜 시간이 걸린다.
+dataset/neu/wav/acriil_neu_00000681.wav|이번 사건은 한국만의 독특한 것이 아니었다고 본다.
+dataset/sur/wav/acriil_sur_00001914.wav|나는 특이한 이름 때문에 항상 놀림거리가 된다.
+dataset/fea/wav/acriil_fea_00002238.wav|그녀가 잠든 모습을 스케치북에 그렸다.
+dataset/hap/wav/acriil_hap_00002547.wav|땅콩이며 오징어 따위를 어수선하게 늘어놓고 낄낄대며 먹고 있는 그들의 주위에 대한 철저한 무관심이 나는 차라리 부러웠다.
+dataset/sad/wav/acriil_sad_00002364.wav|어머 저기 길에서 벌거벗고 있는 사람좀 봐요.
+dataset/neu/wav/acriil_neu_00002630.wav|야채는 삶아서 조리하는 것이 영양분 파괴가 가장 적다.
+dataset/fea/wav/acriil_fea_00001085.wav|어서 한번 고향에 다녀오셔야 할 텐데요.
+dataset/dis/wav/acriil_dis_00000086.wav|회사에 처음 입사해 교육을 받을 때와 같은 기분입니다.
+dataset/sad/wav/acriil_sad_00000479.wav|그러면서 학부모의 교사선택권이 전혀 고려되지 않고 있는 현 제도를 비판하면서 교사공급에만 급급해 온 교사임용제도의 문제점을 제시했다.
+dataset/hap/wav/acriil_hap_00003318.wav|정말 별이 반짝반짝 빛납니다.
+dataset/hap/wav/acriil_hap_00003968.wav|자신도 의사고 이 병원의 원장이었지만 의사 간호사의 따뜻한 한 마디가 큰 힘이 되었다.
+dataset/sad/wav/acriil_sad_00001114.wav|노대통령과 만나자는 것이다 민자당은 아직 당으로서 체제를 갖추지 않았다.
+dataset/hap/wav/acriil_hap_00002495.wav|흐름을 잘 타고 있다는 쾌감 때문에 운전을 잘하고 있다는 자부심까지 맛본다.
+dataset/hap/wav/acriil_hap_00001447.wav|니덜이 운제 노무현이를 그케 사랑했따꼬 그 속 보이는 짓을 해쌌노.
+dataset/sad/wav/acriil_sad_00002234.wav|나는 독학으로 중국어를 마스터했다.
+dataset/fea/wav/acriil_fea_00002831.wav|겨우 그런 찰과상으로 입원까지 하다니 정말 엄살이 심하군요.
+dataset/hap/wav/acriil_hap_00004059.wav|액세서리에서 생활용품에 이르기까지 못 만드는 게 없을 정도로 재미있고 손쉬운 공예입니다.
+dataset/ang/wav/acriil_ang_00001337.wav|비교우위론에 입각한 공업우선정책 때문에 한 국가의 생존이 달려 있는 식량 문제를 다른 나라에 의존 이는 마치 쌀독을 남에게 맡기는 격이다.
+dataset/sur/wav/acriil_sur_00002173.wav|나는 공무원 시험 준비를 위해 모든 친구들과 연락을 끊었다.
+dataset/sur/wav/acriil_sur_00000298.wav|중국 당나라에 백장회해라는 큰 선사가 있었다.
+dataset/dis/wav/acriil_dis_00001141.wav|십이일 서울에 온 하마모리 시장은 무척 바쁜 하루를 보냈다.
+dataset/hap/wav/acriil_hap_00002646.wav|남을 위해서 일한다는 것이 마음에 이다지 큰 기꺼움을 준다는 것도 비로소 알게 되었다.
+dataset/ang/wav/acriil_ang_00001640.wav|직장을 그만두고 일 년 동안 세계 여행을 하기로 결심했다.
+dataset/hap/wav/acriil_hap_00001703.wav|저에게 무한한 사랑을 주신 박 선생님께 감사하는 말씀을 드리고 싶습니다.
+dataset/fea/wav/acriil_fea_00000533.wav|훗날 오늘의 어른들이 역사 앞에 어떻게 얼굴을 들려고들 방관하고 있는지 모르겠다.
+dataset/ang/wav/acriil_ang_00000914.wav|야권통합의 산파역을 자임하고 나선 재야 통추회의의 상임공동대표 김관석목사는 이십일 밤 자택에서 만난 기자에게 신 야당 창당일정 및 투쟁목표를 밝혔다.
+dataset/sur/wav/acriil_sur_00002830.wav|여름에 운전하는 데에는 선글라스가 필수품이죠.
+dataset/sad/wav/acriil_sad_00000623.wav|그분들은 모두 평생 정치를 해오신 분들이다.
+dataset/neu/wav/acriil_neu_00000839.wav|쿠웨이트 수복을 위해 이라크군에 반격을 가할 생각은 없는가.
+dataset/sur/wav/acriil_sur_00000261.wav|카드에 적힌 작고 반듯한 글씨체가 여자필적이었고 수표발행지점이 개포동 지점이어서 같은 아파트단지에 사는 주부가 그 주인공일 것으로 추정한 박씨 부부는 우선 이웃부터 수소문을 해 나갔다.
+dataset/hap/wav/acriil_hap_00002817.wav|애들은 먼저 출발하였던 일반 사람들을 따라잡는 데 재미가 나서 더욱 빨리 올라갔다.
+dataset/sad/wav/acriil_sad_00002905.wav|저 연예인의 아니꼬운 모습은 정말이지 차마 눈 뜨고 볼 수가 없어.
+dataset/sur/wav/acriil_sur_00001410.wav|노동조합이란 조직과 노동운동은 어느 누구의 주도권다툼에 이용되어서는 안된다.
+dataset/ang/wav/acriil_ang_00002598.wav|그 탤런트는 사람을 치고 뺑소니를 쳐서 물의를 빚고 있다.
+dataset/dis/wav/acriil_dis_00001702.wav|선로를 따라 걷다보니 큰 다리가 보였다.
+dataset/ang/wav/acriil_ang_00001783.wav|나는 아마존 강에서 보트를 탈 예정이다.
+dataset/ang/wav/acriil_ang_00002818.wav|신생아의 몸은 팔십퍼센트나 물로 되어 있다.
+dataset/fea/wav/acriil_fea_00000839.wav|쿠웨이트 수복을 위해 이라크군에 반격을 가할 생각은 없는가.
+dataset/fea/wav/acriil_fea_00001695.wav|솔로 생활을 오래하다 보니 외로워서 어찌할 바를 모르겠다.
+dataset/fea/wav/acriil_fea_00000196.wav|우리는 한국학을 배우는 학생들에게 일년간 한국어를 집중적으로 강의합니다.
+dataset/fea/wav/acriil_fea_00000410.wav|지금 마음에 자꾸 걸리는 점은 통석이란 단어에 뼈아프게 뉘우치고 후회한다는 사전에도 없는 뜻을 만들어냈던 우리 정부의 일본어 해독력이다.
+dataset/fea/wav/acriil_fea_00002251.wav|포도주는 심장과 혈액순환에 도움이 된다고 한다.
+dataset/neu/wav/acriil_neu_00000348.wav|그러나 그렇다고 언제까지 사실을 외면만 하고 아는 사람만 아는 일로 접어둘 수 있을까.
+dataset/hap/wav/acriil_hap_00003265.wav|두 분 축하드려요.
+dataset/dis/wav/acriil_dis_00001598.wav|오늘 중요한 프레젠테이션이 있어서 아침부터 긴장이 된다.
+dataset/fea/wav/acriil_fea_00000981.wav|시장경제로 개혁을 해야 한다는 데는 생각이 일치되어 있으나 예상외로 시장경제에 관한 지식과 이해가 부족한 것 같습니다.
+dataset/sur/wav/acriil_sur_00002520.wav|월드컵 조 추첨에서 한국은 디조가 되었다.
+dataset/sur/wav/acriil_sur_00000306.wav|그 결과 때 아닌 폭풍우가 일본에도 자주 몰아닥친다.
+dataset/hap/wav/acriil_hap_00003843.wav|행복으로 끊임없이 피어나는 날들만 되소서.
+dataset/hap/wav/acriil_hap_00000674.wav|빨리 내 나라 땅을 밟고 내 식으로 퍼지고 싶은 욕망은 우선 내 나라 비행기만 타도 반은 충족될 것 같았다.
+dataset/dis/wav/acriil_dis_00002805.wav|지금 우리가 서 있는 이 곳은 과거에는 바다였다고 한다.
+dataset/fea/wav/acriil_fea_00000920.wav|경제협력개발기구에서도 경제통합에 따라 인플레율은 삼쩜칠퍼센트까지 올라갈 것으로 봤는데 연방 은행이 너무 낙관적이지 않은가.
+dataset/fea/wav/acriil_fea_00000392.wav|예방효과를 노려 엄격한 법적용을 강조하는 것을 나무랄 수 없지만 적어도 법만은 냄비끓듯 가볍지 않게 의연한 무게를 가졌으면 하는 바람이다.
+dataset/dis/wav/acriil_dis_00000373.wav|키스의 한문 표현은 다양하다.
+dataset/fea/wav/acriil_fea_00000833.wav|양쪽 실무자들이 자연스럽게 만나 의견을 나누게 될 겁니다.
+dataset/dis/wav/acriil_dis_00002138.wav|옆 사람의 암내 때문에 견딜 수가 없다.
+dataset/dis/wav/acriil_dis_00002279.wav|이 책은 너무 어려워서 이해하기가 힘들다.
+dataset/ang/wav/acriil_ang_00000754.wav|필요하다면 기구 축소도 가능하다 잘못된 것은 잘할 수 있도록 개선 발전시키는 방향으로 고쳐야 하는 것 아닌가.
+dataset/hap/wav/acriil_hap_00001873.wav|그러다 보니 집이 너무 그리웠습니다.
+dataset/dis/wav/acriil_dis_00000362.wav|그건 정말 호랑이 입에 바쳐온 거나 같다.
+dataset/sur/wav/acriil_sur_00000583.wav|우리가 시장경제를 꾸려가는 한 가격 메카니즘을 시장의 원리에 가깝게 운영하는 것이 합리적인 것은 상식이다.
+dataset/sur/wav/acriil_sur_00001163.wav|다만 공작정치가 되살아난 게 분명하고 그것을 반드시 뿌리뽑겠다고 말하겠다.
+dataset/sad/wav/acriil_sad_00002628.wav|주번 학생은 나와서 칠판을 좀 닦으렴.
+dataset/ang/wav/acriil_ang_00002375.wav|그녀와 나는 퇴근시간이 비슷해서 자주 함께 집에 온다.
+dataset/ang/wav/acriil_ang_00001041.wav|많은 감사원직원들이 이번 이씨 구속사건으로 갈등을 겪고 있던데요.
+dataset/sad/wav/acriil_sad_00000441.wav|모든 계란을 한 바구니에 넣지 말아라 이게 마코위츠의 이론이다.
+dataset/hap/wav/acriil_hap_00000824.wav|다들 교감의 말에 따라 웃었다.
+dataset/ang/wav/acriil_ang_00000380.wav|아무튼 이차대전 전까지만 해도 유럽에서는 이십세 이전의 아가씨는 루즈칠을 하지 못하게 했던 제한된 화장이었다.
+dataset/fea/wav/acriil_fea_00002883.wav|소화기관이 깨끗해지면 영양의 흡수가 좋아지기 때문에 소량의 음식으로도 충분히 만족할 수 있게 된다.
+dataset/neu/wav/acriil_neu_00001893.wav|식사를 채식 위주로 바꿨더니 몸이 가벼워졌다.
+dataset/fea/wav/acriil_fea_00001804.wav|구겐하임 박물관은 뒤집어진 원뿔 나선형 모양의 건물이다.
+dataset/sad/wav/acriil_sad_00000036.wav|정전의원은 약 삼십분간의 회견을 마치고 출마가능성을 점검하려고 대구에 왔으며 당분간 더 머물겠다고 밝혔다.
+dataset/dis/wav/acriil_dis_00002615.wav|목욕탕에서 때가 너무 많이 나와 창피했다.
+dataset/hap/wav/acriil_hap_00002402.wav|그 논문에는 정말 탄복했습니다.
+dataset/neu/wav/acriil_neu_00001852.wav|저 백화점은 팔월 말에 오픈한다고 한다.
+dataset/hap/wav/acriil_hap_00001778.wav|세상의 사람들 사랑을 하면서 눈에 보이는 것만을 사랑하죠.
+dataset/hap/wav/acriil_hap_00002250.wav|명준은 웃으며 고개를 끄덕였다.
+dataset/hap/wav/acriil_hap_00003673.wav|남이 착하고 좋은일 하는 거 보는 것만으로도 행복해 집니다.
+dataset/sad/wav/acriil_sad_00002100.wav|제발 모든 일에 소심하게 좀 굴지마.
+dataset/ang/wav/acriil_ang_00002109.wav|여자 혼자 밤 늦게 혼자 골목길을 걷는 것은 위험하다.
+dataset/fea/wav/acriil_fea_00002545.wav|다음달은 임시주총이 있을 예정이니 참석해 주시기 바랍니다.
+dataset/neu/wav/acriil_neu_00001532.wav|아침에 버스 안에서 넘어져 창피를 당했다.
+dataset/hap/wav/acriil_hap_00002038.wav|씨가 그 가족들이 그 정원이 참 따듯하고 정 넘쳐서 보는내내 내 마음도 따듯했다.
+dataset/sad/wav/acriil_sad_00002026.wav|캠핑을 갔다가 모기에 잔뜩 물려서 돌아왔다.
+dataset/hap/wav/acriil_hap_00002059.wav|달리는 버스는 유쾌하다.
+dataset/sur/wav/acriil_sur_00000245.wav|바가지에 담아 둔 보리밥은 호박잎으로 라도 덮어둔다.
+dataset/sad/wav/acriil_sad_00001340.wav|노조원들 중에는 파업을 내심 원치 않는 근로자들이 더 많다.
+dataset/fea/wav/acriil_fea_00001532.wav|아침에 버스 안에서 넘어져 창피를 당했다.
+dataset/hap/wav/acriil_hap_00002814.wav|이제 제 앞에 단 하루만이 남았대도 좋아요.
+dataset/neu/wav/acriil_neu_00000799.wav|북경에서 벌어지고 있는 일은 분명히 감동적이다.
+dataset/ang/wav/acriil_ang_00002605.wav|그는 나는 새도 떨어뜨리는 명수이다.
+dataset/hap/wav/acriil_hap_00000162.wav|좋은 아버지 프랑스로 유학 보내 준 좋은 아버지.
+dataset/neu/wav/acriil_neu_00000118.wav|미군철수에 앞서 주한미군 부대에서 일하는 이만 오천여명의 한국인 노동자들에 대한 사후대책을 마련해 달라는 것입니다.
+dataset/sur/wav/acriil_sur_00002068.wav|그는 아침을 먹지 않으면 하루종일 힘을 못 쓰고 비실거린다.
+dataset/hap/wav/acriil_hap_00001495.wav|그사람은 한여자를 너무 사랑했지요.
+dataset/hap/wav/acriil_hap_00000017.wav|달리는 버스는 유쾌하다.
+dataset/sad/wav/acriil_sad_00000470.wav|다만 기탁자가 누군지 그 돈이 어떤 돈인지 알게 되면 대단히 놀랄 것이라는 얘기를 들은 게 소득이라면 소득이었고 호기심은 더욱 커갔다.
+dataset/hap/wav/acriil_hap_00000401.wav|스스끼는 싱글싱글 웃으며 선생님이 그 회원으로 굉장하게 활동하신 것은 학생들이 모두들 압니다 하고 말했다.
+dataset/dis/wav/acriil_dis_00000587.wav|물론 이 같은 외국의 시각에는 정부의 잘못과 미숙의 탓이 크다 이점 새 정부는 깊은 연구와 노력이 필요하다.
+dataset/ang/wav/acriil_ang_00000299.wav|그 만큼 우리도 잘살게 된 것은 사실이다.
+dataset/hap/wav/acriil_hap_00000156.wav|그녀의 얼굴이 또 한 번 대어들 듯 웃는다.
+dataset/hap/wav/acriil_hap_00001287.wav|너무너무 재밌고 즐거웠던 사주의 밤을 지나고 큰일당한 소연언니와 하반신 못쓰게 될뻔한 나.
+dataset/neu/wav/acriil_neu_00002866.wav|최근 남성의 흡연율은 줄고 있지만 여성과 청소년의 흡연율은 오히려 늘고 있다.
+dataset/hap/wav/acriil_hap_00001374.wav|하여튼 너무너무 감동적인 영화 헬프.
+dataset/sad/wav/acriil_sad_00001334.wav|우리도 명분 없는 극한투쟁은 원치 않고 산업평화를 갈망한다.
+dataset/fea/wav/acriil_fea_00001205.wav|삼십년을 같이 민주화를 위해 일해 온 동지 아닙니까.
+dataset/fea/wav/acriil_fea_00001488.wav|이 같은 당략외교나 정부독주 외교의 시대는 이제 끝나야 한다.
+dataset/hap/wav/acriil_hap_00001293.wav|이 작품은 뭔가 깨알같은 퍼즐들이 많아서 즐거웠 던 것도 같고.
+dataset/neu/wav/acriil_neu_00002681.wav|이 연극에는 한 사람의 희로애락이 고스란히 담겨 있다.
+dataset/sur/wav/acriil_sur_00000598.wav|이날 오후 백담사에는 서의현 조계종 총무원장과 대전 동학사 비구니 스님 서른세명이 합류했는데 이들은 모두 서 원장이 주재할 하산법회에 참석할 예정.
+dataset/fea/wav/acriil_fea_00002647.wav|그녀는 친구의 외국생활을 몹시 동경한다.
+dataset/ang/wav/acriil_ang_00000217.wav|그리고 양국간 정치적 관계가 호전될수록 경제적 측면에서의 발전 전망도 따라서 밝아질 것이라고 확신합니다 그러나 우리는 기업인이기 때문에 정치적인 예측은 못합니다 이번 정상회담이 성공적으로 끝나기를 바랄 뿐입니다.
+dataset/dis/wav/acriil_dis_00001274.wav|집권 실무 경험만으로 생각해서는 안될 것이다 경험 없는 사람도 섞여 조화를 이루어야 한다.
+dataset/hap/wav/acriil_hap_00002688.wav|그는 종조부의 혈통이 자랑스러워지면서 아직도 속에서 보깨던 소인스러운 오만가지 잡념이 눈 녹듯이 사라지는걸 느꼈다.
+dataset/sad/wav/acriil_sad_00000196.wav|우리는 한국학을 배우는 학생들에게 일년간 한국어를 집중적으로 강의합니다.
+dataset/ang/wav/acriil_ang_00000965.wav|우리당의 창당정신도 야권통합에 있으며 이 정신에 따라 창당을 추진해 왔습니다.
+dataset/dis/wav/acriil_dis_00000058.wav|주관식 문제의 경우 서술적 단답형의 문제가 차지하는 비율을 작년의 사십오퍼센트에서 오십오퍼센트로 늘린 대신 단구적 단답형의 비중을 줄여 주관식 출제의 의도를 살리도록 했으며 서술적 단답형의 비율을 계속 늘려가야 한다는 생각이라고 황 교수는 말했다.
+dataset/dis/wav/acriil_dis_00001047.wav|감사원의 감사가 외부압력에 의해서 중단된 경우가 없지 않다는데요.
+dataset/sad/wav/acriil_sad_00000698.wav|삼당통합의 목적은 거기에 있었다.
+dataset/dis/wav/acriil_dis_00002892.wav|나는 생활비를 벌기 위해 고깃집에서 아르바이트를 하고 있다.
+dataset/hap/wav/acriil_hap_00001390.wav|울딸이 곶감을 안먹는다니 우리둘은 넘 행복했다.
+dataset/hap/wav/acriil_hap_00001233.wav|웬만한 레스토랑간것보다 많이먹어서 엄마 계산할때 깜짝 아 근데 너무행복했쏭.
+dataset/sad/wav/acriil_sad_00002725.wav|그녀는 무리한 다이어트로 현기증이 나서 쓰러졌다.
+dataset/sur/wav/acriil_sur_00002246.wav|비를 맞고 걸어가고 있는데 모르는 사람이 친절하게 우산을 씌워 주었다.
+dataset/fea/wav/acriil_fea_00000975.wav|긴 장래를 보면 소련은 광대한 시장임에 틀림없습니다.
+dataset/sad/wav/acriil_sad_00000405.wav|임의단체인 국어연구소를 승격시켜 명실 상부한 국가의 어문정책을 반영하게 된 것이다.
+dataset/neu/wav/acriil_neu_00000400.wav|이렇게 빈틈 없이 달을 소유한다.
+dataset/fea/wav/acriil_fea_00002133.wav|나는 냄새를 잘 맡아서 개코라는 별명을 갖고 있다.
+dataset/hap/wav/acriil_hap_00001366.wav|감동적인글과 마음에서 울어나오는 감동적인글 제가 감명있게 읽은 감동적인글입니다.
+dataset/dis/wav/acriil_dis_00000794.wav|그러나 기본적인 정책이 변했다고 말하기에는 너무 이르다.
+dataset/fea/wav/acriil_fea_00000288.wav|국민생활과 직결된 기상통보를 해 온 기상대이지만 청으로 승격된 후에도 춥고 쓸쓸한 관공서이기는 마찬가지였다.
+dataset/dis/wav/acriil_dis_00000439.wav|이번에 노벨상을 받은 미국의 세 경제학자들에 대해서는 각 신문마다 별로 크게 다루지 않았다.
+dataset/sad/wav/acriil_sad_00001142.wav|하마모리 시장은 천안에 있는 피격칼기 희생자위령탑참배단으로 왓카나이시민등 백 육십 명을 인솔 전세기편으로 지난구일 부산에 도착했다.
+dataset/neu/wav/acriil_neu_00001034.wav|처음 감사원이 무슨 일을 하는지도 모르고 부임했다는 그는 일을 해 보면 해 볼수록 참으로 중요한 기관이구나 하는 것을 느꼈다고 했다.
+dataset/ang/wav/acriil_ang_00001646.wav|한국과 브라질간의 축구 경기는 정말 흥미진진했다.
+dataset/ang/wav/acriil_ang_00000694.wav|준병 총장에게 동정을 한다.
+dataset/hap/wav/acriil_hap_00000888.wav|바다가 그 거대한 한 몸뚱이로만 움직이지 않고 섬세하고 여린 결로도 움직인단 사실은 매우 경이로운 것이었다.
+dataset/sad/wav/acriil_sad_00002035.wav|우리집 욕조는 너무 작아서 내 몸이 다 들어가지 않는다.
+dataset/hap/wav/acriil_hap_00001797.wav|나는 그가 사과하지 않기를 바랬다.
+dataset/sad/wav/acriil_sad_00002589.wav|주식으로 큰 돈을 번 친구가 부럽다.
+dataset/fea/wav/acriil_fea_00002035.wav|우리집 욕조는 너무 작아서 내 몸이 다 들어가지 않는다.
+dataset/neu/wav/acriil_neu_00000033.wav|합당이니 뭐니 얘기 안했습니다.
+dataset/neu/wav/acriil_neu_00001409.wav|근로자에게도 정치에 참여할 권리가 있으며 정치적 요구나 주장을 펼 권리는 있다.
+dataset/fea/wav/acriil_fea_00000217.wav|그리고 양국간 정치적 관계가 호전될수록 경제적 측면에서의 발전 전망도 따라서 밝아질 것이라고 확신합니다 그러나 우리는 기업인이기 때문에 정치적인 예측은 못합니다 이번 정상회담이 성공적으로 끝나기를 바랄 뿐입니다.
+dataset/hap/wav/acriil_hap_00000712.wav|아내는 사흘 전부터 설렁탕 국물이 마시고 싶다고 남편을 졸랐다.
+dataset/sur/wav/acriil_sur_00001922.wav|그는 하루종일 걱정만 하는 한심한 인간이다.
+dataset/hap/wav/acriil_hap_00002240.wav|꽃밭에는 싱싱한 꽃이 꿀벌들 잉잉거리는 속에서 웃고 있었다.
+dataset/hap/wav/acriil_hap_00002050.wav|일 안하고도 돈 더 받고 유쾌가 있고 빌어먹는 것보다 점잖고 일본말로 하자면 삼박자 같은 좋은 일이 이것뿐이었다.
+dataset/sad/wav/acriil_sad_00000913.wav|김목사는 이날 오전 서울프레스센터에서 김대중 평민당총재와 이기택 민주당총재의 손을 맞잡고 야권 삼정파의 통합추진을 선언했다.
+dataset/sur/wav/acriil_sur_00001267.wav|물론 살아 남는다 지금은 병이 들어 있다 그러나 곧 회복될 것이다.
+dataset/sad/wav/acriil_sad_00001618.wav|죄송하지만 월요일에 만나기로 한 약속을 금요일로 변경해도 될까요.
+dataset/sad/wav/acriil_sad_00002123.wav|시력이 나빠서 선배와 마주치고도 인사를 안 했더니 건방지다는 소리를 들었다.
+dataset/ang/wav/acriil_ang_00001688.wav|저 녀석 때문에 나까지 선생님 눈 밖에 났어.
+dataset/neu/wav/acriil_neu_00000565.wav|우리 증권시장을 이런 측면에서 관찰하면 너무도 전근대적이고 허점 투성이처럼 보인다.
+dataset/ang/wav/acriil_ang_00000734.wav|지자제 문제가 가장 첨예한 쟁점인 만큼 이 문제에 대한 최대 공약수를 추출하는 것이 중요하다.
+dataset/sad/wav/acriil_sad_00002243.wav|그는 덩치는 산 만하지만 마음은 아이 같이 여리다.
+dataset/fea/wav/acriil_fea_00000301.wav|인도네시아의 숲이 황폐화되면 기상에 악영향을 준다.
+dataset/hap/wav/acriil_hap_00000558.wav|며칠 내에 부쩍 자란 듯싶은 점순이가 여간 반가운 것이 아니다.
+dataset/dis/wav/acriil_dis_00002217.wav|냄새나니까 나한테 가까이 오지 마.
+dataset/fea/wav/acriil_fea_00001471.wav|김대표가 지자제선거를 앞두고 밝힌 개혁입법의 의지는 일단 긍정적으로 평가된다.
+dataset/hap/wav/acriil_hap_00003341.wav|신경주역에서도 미리 맞이하는 크리스마스로 이쁜 대형트리 점등식을했어요.
+dataset/fea/wav/acriil_fea_00001406.wav|우선 수도권 및 대도시지역의 일가구 이주택이상 소유자에게는 누진세를 과감히 매기기 바란다.
+dataset/hap/wav/acriil_hap_00003267.wav|크리스마스 땐 같은 친구와 교회를 가요.
+dataset/sur/wav/acriil_sur_00002546.wav|다음달 오바마 대통령이 한국에 방문한대.
+dataset/sur/wav/acriil_sur_00002746.wav|나는 한번 여행을 떠나면 한 달 정도는 집에 돌아오지 않는다.
+dataset/dis/wav/acriil_dis_00001424.wav|강경대군의 죽음이 몰고온 회오리의 한 중간에 우리는 서 있다.
+dataset/fea/wav/acriil_fea_00001466.wav|최근 기업들의 근로조건이 현저하게 개선됐다고하나 산업평화정착에 기업들은 더욱 배려햐야 할 것이다.
+dataset/neu/wav/acriil_neu_00000999.wav|그분은 신념이 너무 강해 공정한 사회자는 못됐을 거요.
+dataset/sur/wav/acriil_sur_00000172.wav|우선 중국은 현재까지는 천안문사태 이후 국내 문제 때문에 동북아 정세변화에 대한 입장표명이 불분명했습니다.
+dataset/ang/wav/acriil_ang_00001110.wav|올해 일련의 혁신적인 경제정책들이 마련된다고 하던데요.
+dataset/sad/wav/acriil_sad_00002809.wav|그녀의 아름다움은 말로는 표현할 수가 없다.
+dataset/hap/wav/acriil_hap_00002851.wav|지도자의 명령에 무조건 복종한다는 것은 좋은 일이었다.
+dataset/neu/wav/acriil_neu_00000130.wav|이씨등 업주들의 정화움직임 뒤에는 물론 건전한 위락풍토를 조성할테니 영업시간 제한조치를 완화해달라는 희망이 담겨 있다고 이씨는 인정한다.
+dataset/fea/wav/acriil_fea_00001578.wav|외제차에 대한 수요는 몇 년 전보다 더 높아졌다.
+dataset/hap/wav/acriil_hap_00001903.wav|팩토리의 따끈하게 데워 나오는 포카치아가 그리웠습니다.
+dataset/neu/wav/acriil_neu_00001728.wav|국회의원인 이상 국민과의 약속을 지켜야 한다.
+dataset/dis/wav/acriil_dis_00000852.wav|노조교사를 해고하는 것은 우리 연맹의 입장에서는 받아들일 수 없는 일이다.
+dataset/sad/wav/acriil_sad_00000806.wav|그 문제에 대해서 다소 오해가 있는 것 같습니다.
+dataset/fea/wav/acriil_fea_00001328.wav|우리가 생명을 걸고 지켜야 할 신성한 노동현장에 공권력이 투입된 것은 도저히 용납할 수 없는 일이다.
+dataset/hap/wav/acriil_hap_00003918.wav|어쩐지 소녀의 마음이 담겨진 여행 가방처럼 그리고 손으로 만든 것만이 가지고 있는 따뜻한 온기가 느껴진다.
+dataset/hap/wav/acriil_hap_00003131.wav|싸움한 뒤 하루가 못되어 두 사람이 베개를 나란히 하고 서로 꼭 끼고 잘 때에는 그렇게 고맙고 그렇게 감격이 일어나는 위안이 또다시 없음이다.
+dataset/hap/wav/acriil_hap_00000187.wav|저는 가끔 나이 많은 사람을 보면 이런 생각을 해요.
+dataset/fea/wav/acriil_fea_00002444.wav|몇 번을 전화해도 그가 받지 않아 무슨일이 있는 게 아닌지 걱정이 된다.
+dataset/sad/wav/acriil_sad_00001938.wav|라디오에서 들은 사연이 너무 안타까워 나도 모르게 눈물이 났다.
+dataset/sur/wav/acriil_sur_00000950.wav|그는 경제사회위원회가 만장일치의 찬성결론을 낸 경우엔 의회에서의 법안통과도 쉽고 찬반의견이 엇갈리면 의회에서도 난상토론이 벌어진다고 설명한다.
+dataset/dis/wav/acriil_dis_00001772.wav|운동 후에는 역시 시원한 맥주가 최고다.
+dataset/hap/wav/acriil_hap_00003538.wav|첫 눈을 보면서 소원을 빌면 꼭 이루어진다고 하죠.
+dataset/dis/wav/acriil_dis_00002933.wav|수상의 아들은 아버지를 믿고 함부로 행동해서 국민으로부터 미움을 사고 있다.
+dataset/hap/wav/acriil_hap_00002202.wav|불쑥 찾아온 자기를 뛰어다니면서 보살펴 주는 마음씨가 몹시 고맙다.
+dataset/fea/wav/acriil_fea_00001217.wav|또 체르노빌사고 이후 안전한 핵연료 수용장치개발에 심혈을 기울이고 있으며 과학기술협력을 통해 세계평화에 기여할 수 있을 것이라고 말했다.
+dataset/sad/wav/acriil_sad_00002981.wav|이번 회의 결과 여하로 교육 방침이 결정됩니다.
+dataset/sur/wav/acriil_sur_00001788.wav|로큰롤은 신나는 박자와 가사로 청소년들에게 특히 어필했다.
+dataset/ang/wav/acriil_ang_00000019.wav|명백한 것은 각 당이 투사하고 있는 실상과 허상이 있다면 이제 허상은 걷어들여야 한다는 것이다.
+dataset/sur/wav/acriil_sur_00001103.wav|주가는 하루에도 올랐다 내렸다하는 것이다 나로서는 얘기할 수 없다.
+dataset/sur/wav/acriil_sur_00002623.wav|나도 너처럼 과일을 예쁘게 깎았으면 좋겠는데.
+dataset/dis/wav/acriil_dis_00002503.wav|사람은 외모나 재산이 아니라 인품으로 평가해야 한다.
+dataset/sur/wav/acriil_sur_00001910.wav|지인을 길에서 마주쳤는데 이름이 기억나지 않아 당황했다.
+dataset/fea/wav/acriil_fea_00001564.wav|삼차 세계대전이 일어난다는 것은 생각만 해도 무서운 일이다.
+dataset/ang/wav/acriil_ang_00000062.wav|대전 갈전동 나루터에서 검거된 김군은 즉시 대전 동부경찰서로 연행돼 탈옥모의과정과 도주경로 등에 대한 조사를 받았다.
+dataset/ang/wav/acriil_ang_00001766.wav|이 곳의 가게들은 모두 셔터가 내려져 있다.
+dataset/neu/wav/acriil_neu_00001324.wav|특히 중소기업을 중심으로 한국과 경제협력이 이뤄지길 기대한다.
+dataset/neu/wav/acriil_neu_00001453.wav|오대산 태백산 등지에는 등산객들이 다니는 길목주변에 덫 함정 등이 설치돼 등산객들이 발목을 다치는 등 인명사고도 빚고 있다.
+dataset/hap/wav/acriil_hap_00000555.wav|돼지 한 마리를 일년동안 충실히 기르면 세금도 세금이려니와 잔돈푼의 가용돈은 훌륭히 우러나왔다.
+dataset/sur/wav/acriil_sur_00001878.wav|피가 섞이지 않아도 가족이라고 부를 수 있다.
+dataset/sad/wav/acriil_sad_00002251.wav|포도주는 심장과 혈액순환에 도움이 된다고 한다.
+dataset/hap/wav/acriil_hap_00001455.wav|너를 사랑했다 창을 닫으면서 너를 사랑했 다.
+dataset/fea/wav/acriil_fea_00000887.wav|통일의 기운이 충만한 요즘 소원이 이루어질 것 같은 기대로 감격에 차 있습니다.
+dataset/neu/wav/acriil_neu_00000228.wav|일본 회사와 거래가 있는 우리나라 회사서 업무 협의차 직원 한 명이 동경 출장을 가면 상대방 회사의 중역들이 공항까지 나와 정중하게 영접을 한다.
+dataset/fea/wav/acriil_fea_00002080.wav|한국이 월드컵 사강에 진출하다니 누구도 예상치 못했던 일이다.
+dataset/fea/wav/acriil_fea_00002997.wav|박원순 시장 엄마들 눈물 닦아줄 수 있을까.
+dataset/ang/wav/acriil_ang_00002660.wav|이번 백화점 세일 때 살 목록을 적어두었어.
+dataset/fea/wav/acriil_fea_00001747.wav|담배를 피우다니 학생이 해서는 안 될 행위다.
+dataset/hap/wav/acriil_hap_00003260.wav|건강을 위한다는 신라면 블랙 광고.
+dataset/fea/wav/acriil_fea_00001293.wav|국민의 여망에 부응할 정도로 급속한 경제성장을 달성할 수 있는가.
+dataset/ang/wav/acriil_ang_00002592.wav|선생님 요즘 어떻게 지내고 계세요.
+dataset/dis/wav/acriil_dis_00000043.wav|내가 선거대책본부까지 설치했다는 소문이 있지만 사실이 아니다 선거가 얼마 남지 않아 나름대로 준비를 하고 있는 것은 사실이다.
+dataset/hap/wav/acriil_hap_00003889.wav|국내에도 이렇게 멋진 곳이 있다는 사실이 놀랍기도 하고 한편으로 감사하기까지 하다.
+dataset/ang/wav/acriil_ang_00002923.wav|이 드레스의 우아함에 나는 완전히 반했다.
+dataset/sad/wav/acriil_sad_00000165.wav|북한은 대남 적화를 위해 내부가 분열과 혼란으로 엉망진창이 되고 혁명적인 사태가 일어나길 아직도 기대하고 있습니다.
+dataset/neu/wav/acriil_neu_00002996.wav|전화 응대도 제대로 못하다니 시회인으로서 창피하다.
+dataset/dis/wav/acriil_dis_00002220.wav|따뜻한 코코아를 한 잔 마시니 얼었던 몸이 녹았다.
+dataset/ang/wav/acriil_ang_00000999.wav|그분은 신념이 너무 강해 공정한 사회자는 못됐을 거요.
+dataset/fea/wav/acriil_fea_00000505.wav|통화내용은 안되더라도 전화가 어디서 걸려온 것인지 만이라도 확인해달라고 관할 전화국장에게 통사정했지만 허사였다.
+dataset/hap/wav/acriil_hap_00003199.wav|차표를 뒤져내고 어감만으로도 불안한 검사가 무사히 끝나서 다시 차표를 간직하고 난 사람들은 사소한 흥분과 긴장이나마 치르고 나서 안도하는 낯빛이었다.
+dataset/ang/wav/acriil_ang_00001865.wav|부모님은 싸운 뒤 몇 주 째 말을 안 하고 있다.
+dataset/hap/wav/acriil_hap_00000181.wav|정하고 나니 후련하다.
+dataset/sur/wav/acriil_sur_00000382.wav|이런 선진복지국가는 예외이고 특히 제삼세계 등 대다수 나라는 여전히 어린이의 복지가 사각지대로 남아 있다.
+dataset/sad/wav/acriil_sad_00001275.wav|언제든지 누구와도 대화하겠지만 누구든 폭력을 쓰는 사람은 결코 용서할 수 없으며 단호하게 척결해야 한다.
+dataset/fea/wav/acriil_fea_00001721.wav|그의 가족은 어머니만 빼고 모두 키가 크다.
+dataset/neu/wav/acriil_neu_00002256.wav|사업이 잘 풀려 금전적 여유를 갖게 되었다.
+dataset/neu/wav/acriil_neu_00002432.wav|예뻐지고 싶은 것은 여자의 본능적인 욕구이다.
+dataset/ang/wav/acriil_ang_00002810.wav|그는 자기가 대단한 사람이라도 되는 양 항상 거만하게 군다.
+dataset/neu/wav/acriil_neu_00001404.wav|이래 갖고는 누구나 집을 더 가지려 한다.
+dataset/ang/wav/acriil_ang_00002223.wav|어제 하루종일 이삿짐을 날랐더니 팔다리가 쑤셔서 견딜 수가 없다.
+dataset/hap/wav/acriil_hap_00000496.wav|아들을 낳음으로써 나는 내가 남자가 된 것처럼 당당해졌다.
+dataset/ang/wav/acriil_ang_00002896.wav|나는 부모님을 원망만 해왔지만 내 아이를 낳고 보니 부모님의 고마움을 느끼게 되었다.
+dataset/hap/wav/acriil_hap_00000958.wav|선물로 전한 유리상자의 널 사랑하겠어를 듣고 사전 엠씨 딩동은 무대에서 신부에게 고백을 했다.
+dataset/hap/wav/acriil_hap_00000226.wav|아버지 아버지가 거기서 탈출하신 건 옳았습니다.
+dataset/hap/wav/acriil_hap_00003114.wav|그러나 내가 법당에서 얻은 감명은 우리 나라의 큰 절이나 일본의 그것에 견주어 그렇게 자별하다고 할 것이 없었다.
+dataset/fea/wav/acriil_fea_00001314.wav|여론조사결과를 보면 과반수를 얻기가 절대 불가능하다.
+dataset/sur/wav/acriil_sur_00001653.wav|나는 감탄과 희열을 느끼며 그 소설을 읽어내려갔다.
+dataset/neu/wav/acriil_neu_00002385.wav|이 쇼핑몰은 저녁 여덟시에 문을 닫는다.
+dataset/ang/wav/acriil_ang_00002933.wav|수상의 아들은 아버지를 믿고 함부로 행동해서 국민으로부터 미움을 사고 있다.
+dataset/ang/wav/acriil_ang_00000337.wav|요새 우리네 경찰은 이 고양이와 같다.
+dataset/fea/wav/acriil_fea_00002735.wav|치한이 가장 많은 것은 아무래도 전철 안이다.
+dataset/hap/wav/acriil_hap_00002956.wav|부지런히 정진하시면 됩니다.
+dataset/ang/wav/acriil_ang_00002840.wav|그녀는 젊은 시절 간호사였던 만큼 부상자에게 달려가더니 치료를 척척 해내었다.
+dataset/hap/wav/acriil_hap_00001966.wav|어떻해 두근두근대 어떻해 넌 나만의 반쪽 난 너만의 반쪽 늘 매일매일 알콩달콩 하루가 즐거운걸.
+dataset/hap/wav/acriil_hap_00000233.wav|돈 안 드는 걸음을 할 수 있는 게 좋았다.
+dataset/dis/wav/acriil_dis_00001795.wav|필립 박사는 일생동안 코끼리를 연구해오고 있다.
+dataset/sad/wav/acriil_sad_00000313.wav|한번 난 사고야 어쩔 수 없다손 치더라도 사고 수습에 최선을 다해야 할 철도청이 이날 보인 탈선은 거기에 그치지 않았다.
+dataset/fea/wav/acriil_fea_00002138.wav|옆 사람의 암내 때문에 견딜 수가 없다.
+dataset/dis/wav/acriil_dis_00000976.wav|경제협력의 잠재성은 크다고 봅니다.
+dataset/sad/wav/acriil_sad_00002993.wav|아무리 어린 아이라도 나름대로 자신의 세계를 갖고 있는 법이다.
+dataset/hap/wav/acriil_hap_00000315.wav|그렇게 해보지 뭐 저 양반 하잔 대로만 하면 어련히 잘 될라구.
+dataset/neu/wav/acriil_neu_00002861.wav|그 아이는 내가 안아올리자 울어제끼기 시작했다.
+dataset/hap/wav/acriil_hap_00003127.wav|왜 그 손가락을 들어 보이라고 했는지 이 손가락과 만적의 소신공양과 무슨 관계가 있다는 겐지 이제 그만 손을 내리어도 좋다는 겐지 뒷말이 없는 것이다.
+dataset/fea/wav/acriil_fea_00001985.wav|금의 가격은 나날이 치솟고 있다.
+dataset/ang/wav/acriil_ang_00001494.wav|용병 종속따위의 이론이 제기되고 있지만 페르시아만에 파견된 다국적군의 어느 누구도 그런 해석은 안한다.
+dataset/sad/wav/acriil_sad_00002906.wav|나는 선생님의 질문에 자신 있게 척척 대답했다.
+dataset/ang/wav/acriil_ang_00002655.wav|선생님의 말씀을 따라 국문과에 진학하기로 결정했다.
+dataset/fea/wav/acriil_fea_00000218.wav|이 같은 전제 위에서 우리도 좀더 전향적이고 적극적인 자세로 일본과의 우호선린관계를 추진해야 한다고 봅니다.
+dataset/sad/wav/acriil_sad_00002980.wav|시간이 흘러도 초심을 잃으면 안 된다.
+dataset/sur/wav/acriil_sur_00002849.wav|오늘은 몸 컨디션이 좋아서 일이 척척 진행된다.
+dataset/ang/wav/acriil_ang_00001803.wav|시간은 언제나 한 방향으로 흐르기 때문에 다시는 돌이킬 수 없다.
+dataset/ang/wav/acriil_ang_00000489.wav|지금 우리는 구십년대의 문턱에서 또다시 어려운 국면을 맞고 있다.
+dataset/sur/wav/acriil_sur_00001241.wav|당국은 전노협을 불법단체라고 규정했는데 경단협도 불법단체가 아닌지 모르겠다 경단협 결성 이후 단위사업장에까지 일관된 지침이 내려와 관철되는 것 같다.
+dataset/sad/wav/acriil_sad_00001074.wav|두 시간 여의 대담을 끝내고 오월에 신록에 파묻혀 있는 검소하디 검소한 그의 집을 나섰다.
+dataset/sad/wav/acriil_sad_00000967.wav|지난 오개월간 창당과정에서 당을 민주적으로 운영하면서 하나의 합의점을 도출해 낸다는게 얼마나 어려운지를 실감했습니다.
+dataset/sur/wav/acriil_sur_00000394.wav|경기의 메인 스타디움이 피땀흘린 선수와 코치의 활동무대 아닌 정치인들의 인기놀이터가 되지 않을까 우려되기조차 한다.
+dataset/sur/wav/acriil_sur_00002636.wav|기차 창밖으로 보이는 들판의 경치가 몹시 아름답다.
+dataset/dis/wav/acriil_dis_00000601.wav|관계자들은 전씨 내외가 백담사생활 이년 일 개월 팔일 칠백 육십구일 만에 서울로 되돌아간다는 변화에 애써 마음의 동요를 다지려하는 것 같았다고 전했다.
+dataset/dis/wav/acriil_dis_00002326.wav|밖에서 갑자기 쿵 하는 소리가 들려 무슨 일인지 나가보았다.
+dataset/dis/wav/acriil_dis_00000389.wav|체위만 향상하고 체력은 저하된 요즈음 젊은이들 조회하는 그 동안을 못참아 퍽퍽 쓰러지고 어제 그제만 해도 천미터를 못달려 고교생들이 둘이나 죽고 있다.
+dataset/neu/wav/acriil_neu_00001419.wav|바르셀로나 올림픽에도 남북한 단일팀이 출전할 수 있도록 남북양측이 노력해야겠다.
+dataset/hap/wav/acriil_hap_00001704.wav|저를 믿어 주시고 끝까지 키워 주시는 은혜에 대하여 항상 감사하게 생각하고 있습니다.
+dataset/fea/wav/acriil_fea_00001369.wav|산재보험은 산업재해 근로자를 돕기 위한 사회보험이다 따라서 그 일차 수혜자는 근로자다.
+dataset/hap/wav/acriil_hap_00002121.wav|잠자리에 들었다가 그만 잠이 달아나 버린 아이들이 일제히 만만세를 부르며 좋아라 하고 날뛰기 시작했다.
+dataset/neu/wav/acriil_neu_00001480.wav|그러나 정부에 의한 단속과 통제를 얘기하기에 앞서 모두가 자기충동부터 단속해야 할지 모른다.
+dataset/hap/wav/acriil_hap_00003861.wav|하지만 우리 부부의 닭살스런 행동을 보며 아이들은 마냥 좋아하고 행복해한다.
+dataset/fea/wav/acriil_fea_00000795.wav|그렇다면 북한의 보다 급진적인 개혁 개방은 기대하기 어렵다는 것인가.
+dataset/hap/wav/acriil_hap_00001208.wav|어르신들의 행복한 일자리가 되기 위해선 가족같은 분위기가 우선이겠죠.
+dataset/ang/wav/acriil_ang_00001077.wav|정권이 중반으로 들어서서 안정을 얻을 법도한데 계속 몹시 동요하는 양상이다.
+dataset/fea/wav/acriil_fea_00002542.wav|이승엽 선수가 연이어 홈런을 쳤다.
+dataset/sur/wav/acriil_sur_00001879.wav|미국 아이들의 사십퍼센트는 그들의 아버지와 살고 있지 않다.
+dataset/neu/wav/acriil_neu_00001204.wav|그는 정치감각과 인간미가 넘치는 분이므로 국회운영에 많은 조언을 해 줄 것을 기대합니다.
+dataset/hap/wav/acriil_hap_00002345.wav|차차 다시 나타나는 미묘한 표정 커다랗게 뜨인 눈에 비치는 동경의 물결 일단 사라졌던 아름다운 표정은 다시 생기가 비롯하였다.
+dataset/ang/wav/acriil_ang_00000456.wav|건서라면 이상하게 볼게 한 두 가지가 아니다.
+dataset/dis/wav/acriil_dis_00001212.wav|우리가 지금 추진하고 있는 새로운 경영체제에 있어서도 후계자 육성부분은 비중 있는 과제입니다.
+dataset/sad/wav/acriil_sad_00002463.wav|손톱깎이는 서랍 맨 아랫칸에 있어.
+dataset/sur/wav/acriil_sur_00002364.wav|어머 저기 길에서 벌거벗고 있는 사람좀 봐요.
+dataset/sad/wav/acriil_sad_00001300.wav|동유럽 사태와 니카라과 선거를 보면서 세계적으로 반마르크스주의가 번지고 있다는 주장도 있다.
+dataset/hap/wav/acriil_hap_00001263.wav|뭐지뭐지 하고 봤는데 받는사람에 김지수 라고적혀있는거 보고 감동했쥬.
+dataset/dis/wav/acriil_dis_00002128.wav|할머니는 보청기를 끼지 않으면 내 말을 못 알아들으신다.
+dataset/dis/wav/acriil_dis_00001514.wav|관공서는 뭐든지 규정대로만 하려 하고 도무지 융통성이 없다.
+dataset/ang/wav/acriil_ang_00001571.wav|나는 게임을 좋아해서 아르바이트로 번 돈을 모두 게임하는 데 쓴다.
+dataset/neu/wav/acriil_neu_00002401.wav|내 도움이 필요하면 언제라도 전화해.

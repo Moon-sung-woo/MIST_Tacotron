@@ -1,0 +1,100 @@
+dataset/sur/wav/acriil_sur_00001484.wav|그때보다 훨씬 급격하게 훨씬 폭넓게 세계질서는 재편이 소용돌이 치고 있다.
+dataset/hap/wav/acriil_hap_00001952.wav|오전 항공편이라 새벽부터 서둘러 공항리무진 버스에 몸을 실고 늘 설레는 너두 설레는구나.
+dataset/fea/wav/acriil_fea_00001458.wav|겨울철 산악지방이 많은 강원도를 비롯한 곳곳 산야에서 야생수들이 수난을 당하고 있다.
+dataset/sad/wav/acriil_sad_00002537.wav|두 남녀는 음독자살을 기도했다.
+dataset/ang/wav/acriil_ang_00001393.wav|국빈방문은 국가적 행사의 성격을 띠는 상징성과 이 때문에 내용의 중요성이 뒤따르고 여기에 의전절차도 까다롭다.
+dataset/hap/wav/acriil_hap_00002022.wav|오랜만의 일산 밤나들이라 추웠지만 즐거웠답니닷.
+dataset/sur/wav/acriil_sur_00001219.wav|나는 과거 야당에서도 김영삼 김대중 이민우씨 등 이 지도부에 있는 집단지도체제 때 총무를 했는데 이번에도 공교롭게 집단지도 여당의 총무가 됐습니다.
+dataset/fea/wav/acriil_fea_00000638.wav|금융소득에 대한 종합과세를 추진하되 소액가계저축에 대해서는 우대하겠습니다.
+dataset/fea/wav/acriil_fea_00000091.wav|쌍용투자증권이 정년 퇴직자를 대상으로 실시한 신입사원 공채에서 다른 열일곱명과 함께 채용돼 지난해 십이월 이십구일부터 서울 영동지점 상임고문으로 일하며 새 인생을 시작한 배경주씨는 회사측에서 고문이란 과분한 직책을 맡겼지만 수습사원으로 생각하고 있다고 말했다.
+dataset/ang/wav/acriil_ang_00000501.wav|러시아 역사에서는 가족 영농이 기본적 전통이 아니었다.
+dataset/hap/wav/acriil_hap_00000980.wav|슬픈 화자든 다정한 화자든 신나는 화자든 박정현은 그 캐릭터를 연기하며 곡의 느낌을 최대한 이끌어 내는 능력이 탁월한 것이죠.
+dataset/fea/wav/acriil_fea_00000202.wav|인류는 최근 독일의 실질적인 통일을 목격했습니다.
+dataset/sur/wav/acriil_sur_00000067.wav|교도소를 나와 박 신과 내가 반대방향으로 떨어져 달아나다 전주국도 주변에서 합류한 뒤 전주대학 뒷산에 숨어 있다가 트럭을 훔쳐타고 삼례로가 시장에서 옷과 식칼 세개를 산 뒤 여인숙에서 옷을 갈아입고 나왔다 삼례에서 다시 택시를 타고 저녁 여덟시쯤 이리역 앞에 도착했다.
+dataset/sad/wav/acriil_sad_00000516.wav|우선 그들은 세비인상 지역사업예산증액 등 신변적 이해가 일치하는 분야에서는 다수 국민의 눈초리를 뭉개버린 채 서로 짝짜궁이를 놓는 용기를 보여줬다.
+dataset/hap/wav/acriil_hap_00002478.wav|젊고 예쁘고 싱싱한 것 그건 얼마나 좋은 건가.
+dataset/fea/wav/acriil_fea_00002890.wav|이십년만에 첫사랑과 재회하게 되어 너무나 기뻤다.
+dataset/fea/wav/acriil_fea_00002863.wav|대지진의 피해를 입은 일본이 빨리 회복되기를 진심으로 기원합니다.
+dataset/fea/wav/acriil_fea_00000451.wav|천사원의 이응무 사무국장은 그림한장 그리기 위해 밤을 새고 끼니까지 거른 채 작업에 열중하는 어린 원생들의 모습에서 인생을 다시 배운다고 말했다.
+dataset/sur/wav/acriil_sur_00000033.wav|합당이니 뭐니 얘기 안했습니다.
+dataset/fea/wav/acriil_fea_00002680.wav|내게 일언반구도 없이 남편은 마음대로 집을 팔아버렸다.
+dataset/sad/wav/acriil_sad_00001333.wav|당국이 생산직 노동자들을 만만하게 깔보고 업신여기는 처사에 대한 분노가 이번 현대 사태에 핵심 중의 하나로 떠올랐다.
+dataset/sad/wav/acriil_sad_00000940.wav|칠월초에 열리는 소련 공산당전당대회가 끝나봐야겠습니다.
+dataset/sad/wav/acriil_sad_00000990.wav|현상을 평가해 보면 산만하고 말만 많지 실질은 없다.
+dataset/neu/wav/acriil_neu_00001363.wav|언제까지 한국의 금융계는 홀로서기를 거부할 것인가.
+dataset/dis/wav/acriil_dis_00001840.wav|반 고흐는 자화상을 그리는 데 큰 관심이 있었다.
+dataset/dis/wav/acriil_dis_00001284.wav|우리는 이 위기를 극복할 수 있다.
+dataset/sur/wav/acriil_sur_00001776.wav|내가 제일 좋아하는 명절은 설날이다.
+dataset/fea/wav/acriil_fea_00002541.wav|어버이날 선물로 뭐가 좋을까.
+dataset/neu/wav/acriil_neu_00001057.wav|비대위 지도부가 방송민주화에 대한 철저한 신념과 이론으로 무장돼 있었다면 사태는 많이 달라졌을 것이다.
+dataset/sur/wav/acriil_sur_00000797.wav|이미 확립된 기본원칙이란 무엇을 말하는가.
+dataset/dis/wav/acriil_dis_00000909.wav|지식인들은 그래도 유신 때보다도 좀 나아진 것 아니냐고 말하기도 합니다.
+dataset/sur/wav/acriil_sur_00001084.wav|나는 특히 정신적 위기상태로 봅니다 국민학교 어린이에서부터 청소년 기업인 정치인들에 이르기까지 우리 사회 전반이 정신적 위기상태에 있다고 봅니다.
+dataset/ang/wav/acriil_ang_00001847.wav|나일강은 세계에서 가장 긴 강이다.
+dataset/sur/wav/acriil_sur_00001741.wav|우등생인 형과는 반대로 남동생은 열등생이라고 한다.
+dataset/hap/wav/acriil_hap_00002726.wav|나는 얼마나 기뻤으랴 두만강을 건너고 오랑캐령을 넘어서 망망한 평야와 산천을 바라볼 때.
+dataset/sur/wav/acriil_sur_00002436.wav|처음엔 정신없던 회사생활도 이젠 적응이 되어 할만하다.
+dataset/neu/wav/acriil_neu_00001330.wav|우리의 이 같은 요구가 받아들여지지 않으면 앞으로는 무기한 총파업을 포함한 강경투쟁을 벌일 계획이다.
+dataset/sad/wav/acriil_sad_00000679.wav|자원이 있는데도 원자력을 하는 것이 아니잖는가.
+dataset/hap/wav/acriil_hap_00000194.wav|그녀는 얼른 고개를 숙여 버린다 사랑스럽다.
+dataset/sad/wav/acriil_sad_00002301.wav|겨우 세살인데 이렇게 영어를 잘 하다니.
+dataset/sur/wav/acriil_sur_00002465.wav|여자친구에게 팔베개를 오랫동안 해주었더니 팔이 저려서 한동안 움직일 수가 없었다.
+dataset/dis/wav/acriil_dis_00002596.wav|월급은 오르지 않고 물가만 오르니 걱정이다.
+dataset/neu/wav/acriil_neu_00002512.wav|여자로 태어나서 너무 행복하다.
+dataset/fea/wav/acriil_fea_00001057.wav|비대위 지도부가 방송민주화에 대한 철저한 신념과 이론으로 무장돼 있었다면 사태는 많이 달라졌을 것이다.
+dataset/sur/wav/acriil_sur_00002239.wav|그녀 콧등의 주근깨마저도 내겐 사랑스럽다.
+dataset/neu/wav/acriil_neu_00002240.wav|아버지는 실직 이후 어깨가 축 처져 있다.
+dataset/neu/wav/acriil_neu_00000523.wav|이제는 교사가 학원을 통해 양산될 수 있다는 것과 사대지원생의 학력저하는 장기적으로 교육의 질 저하라는 점에서 사범교육이 뿌리부터 흔들리게 되었다는 사실이다.
+dataset/sad/wav/acriil_sad_00002416.wav|파칭코는 중독성이 강해서 자칫 폐인이 될 수 있으니 조심해야 한다.
+dataset/neu/wav/acriil_neu_00001550.wav|한밤중에 큰소리로 말다툼을 하다니 비상식적인 것도 정도가 있어요.
+dataset/sur/wav/acriil_sur_00000454.wav|광화문조차도 외국의 원수가 드나들 때마다 현수막에 가려진다 때로는 덕수궁의 대문 위에도 현수막이 걸린다.
+dataset/neu/wav/acriil_neu_00000234.wav|이 창고에는 그밖에도 다른 공직자들이 낸 도자기 화병 칠보항아리 크리스털항아리 카펫 커프스버튼 리벌버권총 브이티알 촬영기 시계 카메라 등이 있다 가게를 차려도 몇 개는 차릴 수 있는 값진 것들이다.
+dataset/sur/wav/acriil_sur_00001474.wav|넉장의 이색적인 구속영장이 신청되었다.
+dataset/fea/wav/acriil_fea_00000664.wav|방한중인 미주기구의 주앙 클레멘트 바이나 소아레스 사무총장은 오일 기자에게 중남미 민주주의에 대해 강한 자신감을 피력했다.
+dataset/dis/wav/acriil_dis_00000514.wav|더욱이 그처럼 역사적인 정상회담에서 카메라 세례를 받아 가면서도 실수가 없으려면 여간 담이 크지 않으면 안된다 그런 걸 경험이 적은 통역자를 썼다는 것부터가 경솔한 일이었다.
+dataset/neu/wav/acriil_neu_00002069.wav|내 마음은 너를 생각할 때 가장 행복해.
+dataset/neu/wav/acriil_neu_00000828.wav|남북 사이클선수단이 합동훈련을 한 사실이 남쪽신문에 크게 보도되었는데요.
+dataset/ang/wav/acriil_ang_00002899.wav|나는 하루 세번 규칙적으로 이를 닦는다.
+dataset/neu/wav/acriil_neu_00001783.wav|나는 아마존 강에서 보트를 탈 예정이다.
+dataset/ang/wav/acriil_ang_00001567.wav|그는 차를 구입한 후로 매주 친구들과 드라이브를 즐긴다.
+dataset/sur/wav/acriil_sur_00000416.wav|그렇다고 해서 지금 모든 사람이 납득할만한 분명한 명분도 없이 국회에 돌아간다는 것도 멋쩍은 일이다.
+dataset/dis/wav/acriil_dis_00002938.wav|삼년간 같은 유니폼을 입었더니 깃이 닳아버렸다.
+dataset/sad/wav/acriil_sad_00002734.wav|일본 경찰의 범인 검거율은 다른 나라에 비해 높다고 한다.
+dataset/sur/wav/acriil_sur_00001154.wav|노대통령과 김최고위원은 예정대로 만나는가.
+dataset/ang/wav/acriil_ang_00001848.wav|하루에 세 번 이 알약을 복용하세요.
+dataset/sur/wav/acriil_sur_00001718.wav|병원에 입원한 후로는 한 번도 술을 마시지 않았다.
+dataset/ang/wav/acriil_ang_00000223.wav|특히 한일관계에서는 구체적으로 접근해야지 현안이 등장할 때만 소리지르는 식으로 대처하면 곤란하다고 봅니다.
+dataset/neu/wav/acriil_neu_00001209.wav|경영대권을 대폭 분산하는 이 같은 결정의 배경은 무엇입니까.
+dataset/sur/wav/acriil_sur_00002208.wav|중요한 발표를 해야하는데 목감기 때문에 목소리가 나오지 않아 낭패다.
+dataset/hap/wav/acriil_hap_00000093.wav|아무래도 고압선 밑이 안전할 것 같았소.
+dataset/ang/wav/acriil_ang_00000266.wav|백혈병을 앓는 생후 팔 개월 된 둘째아들 규의 치료비에 써 달라고 돈을 놓고간 은인을 찾아 감사의 말을 꼭 하고 싶다는 것이었다.
+dataset/neu/wav/acriil_neu_00002962.wav|이 프로그램은 광고 시간이 너무 길어 짜증난다.
+dataset/hap/wav/acriil_hap_00000318.wav|산신이 벗나면 죽도 그릅니다 하고 말을 받으며 그 남편은 빙그레 웃는다.
+dataset/hap/wav/acriil_hap_00001629.wav|기뻐 받으시지 않는 그 무엇도 의미없다.
+dataset/sur/wav/acriil_sur_00000917.wav|북한에 실질적인 도움이 되는 경제협력과 인적교류 확대부터 시작해야 한다.
+dataset/sur/wav/acriil_sur_00000206.wav|한국방문은 이번이 처음이지만 작년에 한국기업인들을 만난 적이 있어 생소하지는 않습니다.
+dataset/dis/wav/acriil_dis_00002109.wav|여자 혼자 밤 늦게 혼자 골목길을 걷는 것은 위험하다.
+dataset/sur/wav/acriil_sur_00000793.wav|북한이 전보다 개방적인 것은 틀림없다.
+dataset/sad/wav/acriil_sad_00000694.wav|준병 총장에게 동정을 한다.
+dataset/dis/wav/acriil_dis_00002297.wav|나는 이 시험에 붙을 자신이 있어.
+dataset/neu/wav/acriil_neu_00002852.wav|어쩌다 좋은 성적을 받았다고 해서 우쭐대지 마.
+dataset/fea/wav/acriil_fea_00001441.wav|특히 때를 놓친 정치적 결단은 오히려 더 큰 역작용을 초래할 경우가 허다하다.
+dataset/sur/wav/acriil_sur_00001262.wav|초법적으로 자행된 이번 강제해직 조처의 부당성을 확인하기 위한 싸움의 기초적인 작업일 뿐이다.
+dataset/ang/wav/acriil_ang_00001846.wav|이 책의 결말은 상상을 뒤엎는다.
+dataset/dis/wav/acriil_dis_00001902.wav|그녀는 세 번 결혼하고 여덟 명의 아이를 낳았다.
+dataset/dis/wav/acriil_dis_00002407.wav|인터넷 쇼핑의 발달과 더불어 택배 산업도 무섭게 발달했다.
+dataset/sur/wav/acriil_sur_00001602.wav|이 약은 하루에 네번 복용해야 합니다.
+dataset/hap/wav/acriil_hap_00003470.wav|오늘은 새로운 일주일이 시작하는 하루니까 기분좋게 시작해 보자구.
+dataset/sur/wav/acriil_sur_00000276.wav|아들의 병원입원비만 일주일에 칠십만원이 들었고 약값과 치료비를 합치면 그 액수는 엄청나게 불어 나갔다.
+dataset/hap/wav/acriil_hap_00003570.wav|그동안 김연우 콘서트가 그의 주옥같은 발라드 곡 위주로 감성을 자극했다면 이번 공연에서는 더욱 풍성하고 다채로운 음악과 함께 흥미진진한 퍼포먼스도 선보인다.
+dataset/sur/wav/acriil_sur_00000863.wav|공공요금을 무리하게 묶어 두면 결국 나중에 추가인상 요인으로 나타나는 것 아닌가.
+dataset/hap/wav/acriil_hap_00003060.wav|혹시 있다면 가르쳐 주시기 바랍니다.
+dataset/ang/wav/acriil_ang_00000826.wav|정말 좋은 일이지요.
+dataset/sad/wav/acriil_sad_00000949.wav|우리 위원회는 매월 한 차례의 전체회의 외에 거의 매일 회의를 갖기 때문에 서로가 서로를 잘 이해하고 있습니다.
+dataset/sad/wav/acriil_sad_00001229.wav|올해 채용하는 국가공무원은 모두 오천 백삼십 명으로 십일부터 총무처와 각 시 도를 통해 원서가 교부된다.
+dataset/dis/wav/acriil_dis_00002455.wav|그 남자는 얌전해보이는 외모와 달리 술버릇은 아주 난폭하다.
+dataset/hap/wav/acriil_hap_00001332.wav|내가 아는 사람 중에서 넌 꽤나 생각이 깊은 편이야 그 말에 또 기뻤다.
+dataset/neu/wav/acriil_neu_00002031.wav|상대방이 기분 나쁘지 않게 거절하는 법은 뭐가 있을까.
+dataset/fea/wav/acriil_fea_00002580.wav|자금 부족으로 더 이상 가게를 꾸려나갈 수 없게 되었다.
+dataset/hap/wav/acriil_hap_00001561.wav|꼭 사과해 주시기 바랍니다.
+dataset/dis/wav/acriil_dis_00000374.wav|기방에서의 입술화장문화도 꽤 발달했었던 것 같다.
