@@ -15,7 +15,7 @@ class ReferenceEncoder(nn.Module):
 
         super().__init__()
         K = len(ref_enc_filters)
-        filters = [1] + ref_enc_filters #이미지로 바꾸려면 여길 3으로 바꿔야 할듯
+        filters = [3] + ref_enc_filters #이미지로 바꾸려면 여길 3으로 바꿔야 할듯
 
         convs = [nn.Conv2d(in_channels=filters[i],
                            out_channels=filters[i + 1],
@@ -116,7 +116,7 @@ class MultiHeadAttention(nn.Module):
         return out
 
 
-class GST(nn.Module):
+class Style_encoder(nn.Module):
     def __init__(self, E, ref_enc_filters, ref_enc_size, ref_enc_strides,
                  ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels):
         super().__init__()
