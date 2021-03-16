@@ -15,7 +15,7 @@ class ReferenceEncoder(nn.Module):
 
         super().__init__()
         K = len(ref_enc_filters)
-        filters = [3] + ref_enc_filters #이미지로 바꾸려면 여길 3으로 바꿔야 할듯
+        filters = [3] + ref_enc_filters
 
         convs = [nn.Conv2d(in_channels=filters[i],
                            out_channels=filters[i + 1],
@@ -25,7 +25,8 @@ class ReferenceEncoder(nn.Module):
         self.convs = nn.ModuleList(convs)
         self.bns = nn.ModuleList([nn.BatchNorm2d(num_features=ref_enc_filters[i]) for i in range(K)])
 
-        out_channels = self.calculate_channels(n_mels, 3, 2, 1, K)
+        # n_mels, 3, 2, 1, K) #여기서 채널에 대한 계산이 이루어 지니깐 여기도 같이 바꿔주면 됨.
+        out_channels = self.calculate_channels(640, 3, 2, 1, K)
         self.gru = nn.GRU(input_size=ref_enc_filters[-1] * out_channels,
                           hidden_size=E // 2,
                           batch_first=True)
@@ -33,7 +34,8 @@ class ReferenceEncoder(nn.Module):
 
     def forward(self, inputs):
         N = inputs.size(0)
-        out = inputs.view(N, 1, -1, self.n_mels)  # [N, 1, Ty, n_mels]
+        # 들어오는 이미지를 어떻게 처리해줄 건지에 대해서 생각해보고 넣어주면 됨.
+        out = inputs.view(N, 3, -1, inputs.size(3))  # [N, 1, Ty, n_mels]
         for conv, bn in zip(self.convs, self.bns):
             out = conv(out)
             out = bn(out)
@@ -121,10 +123,9 @@ class Style_encoder(nn.Module):
                  ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels):
         super().__init__()
         self.encoder = ReferenceEncoder(E, ref_enc_filters, n_mels)
-        self.stl = STL(E, token_num, num_heads)
+
 
     def forward(self, inputs):
         enc_out = self.encoder(inputs)
-        style_embed = self.stl(enc_out)
 
-        return style_embed
+        return enc_out

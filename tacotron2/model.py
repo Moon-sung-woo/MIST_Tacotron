@@ -39,6 +39,7 @@ sys.path.append(abspath(dirname(__file__)+'/../'))
 from common.layers import ConvNorm, LinearNorm
 from common.utils import to_gpu, get_mask_from_lengths
 from tacotron2.modules import GST
+from tacotron2.style_modules import Style_encoder
 
 from tacotron2.data_function import TextMelLoader
 
@@ -644,6 +645,9 @@ class Tacotron2(nn.Module):
         self.gst = GST(E, ref_enc_filters, ref_enc_size, ref_enc_strides,
                  ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels )  # 여기 추가됨.
 
+        self.style_encoder = Style_encoder(E, ref_enc_filters, ref_enc_size, ref_enc_strides,
+                 ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels )
+
     def parse_batch(self, batch):
         text_padded, input_lengths, mel_padded, gate_padded, \
             output_lengths, speaker_ids = batch
@@ -673,12 +677,16 @@ class Tacotron2(nn.Module):
         return outputs
 
     def forward(self, inputs):
-        inputs, input_lengths, targets, max_len, output_lengths, speaker_ids = inputs
+        inputs, input_lengths, targets, max_len, output_lengths, speaker_ids, style_img = inputs
         input_lengths, output_lengths = input_lengths.data, output_lengths.data
 
+        ############test 구간###########
+        print('style_img : ', style_img.shape)
+        style = self.style_encoder(style_img)
+
+        print('style.shape : ', style.shape)
+
         embedded_inputs = self.embedding(inputs).transpose(1, 2)
-
-
         ##############################여기 추가#########################################
         transcript_outputs = self.encoder(embedded_inputs, input_lengths)
 

@@ -29,6 +29,8 @@ import random
 import numpy as np
 import torch
 import torch.utils.data
+import torchvision.transforms as transforms
+import PIL
 
 import common.layers as layers
 from common.utils import load_wav_to_torch, load_filepaths_and_text, to_gpu
@@ -57,6 +59,30 @@ class TextMelLoader(torch.utils.data.Dataset):
         if speaker_ids is None:
             self.speaker_ids = self.create_speaker_lookup_table(self.audiopaths_and_text)
 
+    # ===============mel style transfer 관련 부분===============
+    def get_img_path(self, wav_path):
+        wav_path = wav_path.split('/')
+        wav_path[3] = 'img'
+        wav_path[-1] = wav_path[-1].replace('.wav', '.png')
+        img_path = '/'.join(wav_path)
+        return img_path
+
+    def image_loader(self, img_path):
+        loader = transforms.Compose([
+            transforms.ToTensor()  # torch.Tensor 형식으로 변경 [0, 255] → [0, 1]
+        ])
+        image = PIL.Image.open(img_path).convert('RGB')
+        image = loader(image)
+        return image
+
+    def get_img(self, audiopath):
+        img_path = self.get_img_path(audiopath) #이미지 경로 받아오기
+        #이미지 불러오기
+        image = self.image_loader(img_path)
+        return image
+    # ===============mel style transfer 관련 종료===============
+
+    # ===============speaker id 관련 부분===============
     def create_speaker_lookup_table(self, audiopaths_and_text):
         speaker_list = [x[2] for x in audiopaths_and_text]
         speaker_ids = np.sort(np.unique(speaker_list))
@@ -65,6 +91,7 @@ class TextMelLoader(torch.utils.data.Dataset):
 
     def get_speaker_id(self, speaker_id):
         return torch.IntTensor([self.speaker_ids[speaker_id]])
+    # ===============speaker id 관련 부분 종료===============
 
     def get_mel_text_pair(self, audiopath_and_text):
         # separate filename and text
@@ -76,7 +103,8 @@ class TextMelLoader(torch.utils.data.Dataset):
         mel = self.get_mel(audiopath)
         speaker_id = self.get_speaker_id(speaker)
         #print('data_function.py ====> speaker_id : ', speaker_id)
-        return (text, mel, len_text, speaker_id)
+        style_img = self.get_img(audiopath)
+        return (text, mel, len_text, speaker_id, style_img)
 
     def get_mel(self, filename):
         if not self.load_mel_from_disk:
@@ -121,10 +149,34 @@ class TextMelCollate():
         batch: [text_normalized, mel_normalized]
         """
         # Right zero-pad all one-hot text sequences to max input length
+
+        # print('batch : ', batch)
+        # print('======batch len======', len(batch))
+
+
+        # 이미지 모아서 확인해보기
+        img_list = []
+        for m in range(len(batch)):
+            img = batch[m][4]
+            img_list.append(img)
+            # print('image.shape : ========> ', img.shape)
+
+        shape_list = [x.shape for x in img_list]
+        # print('shape_list : ', shape_list)
+        img_level = shape_list[0][0]
+        y_max = max(shape_list, key=lambda x: x[1])[1] # y 최댓값
+        x_max = max(shape_list, key=lambda x: x[2])[2] # x 최댓값
+
+
+
+
+        # input_길이 확인하고 최대 input길이 확인하기 위해서[100, 80, 50, 30]
+        # ids_sorted_decreasing : 입력으로 들어온 text들의 길이를 정렬할 때 순서 확인용[2,3,0,1]
         input_lengths, ids_sorted_decreasing = torch.sort(
             torch.LongTensor([len(x[0]) for x in batch]),
             dim=0, descending=True)
         max_input_len = input_lengths[0]
+
 
         text_padded = torch.LongTensor(len(batch), max_input_len)
         text_padded.zero_()
@@ -146,27 +198,39 @@ class TextMelCollate():
         gate_padded.zero_()
         output_lengths = torch.LongTensor(len(batch))
         speaker_ids = torch.LongTensor(len(batch))
+        style_img = torch.FloatTensor(len(batch), img_level, y_max, x_max)
+        style_img.zero_()
 
 
-        #print('data_function, TextMelCollate1 ====> ', speaker_ids)
+        # print('data_function, TextMelCollate1 ====> ', style_img)
+        # print('data_function, TextMelCollate1 shape ====> ', style_img.shape)
         for i in range(len(ids_sorted_decreasing)):
             mel = batch[ids_sorted_decreasing[i]][1]
             mel_padded[i, :, :mel.size(1)] = mel
             gate_padded[i, mel.size(1)-1:] = 1
             output_lengths[i] = mel.size(1)
             speaker_ids[i] = batch[ids_sorted_decreasing[i]][3]
+            img = batch[ids_sorted_decreasing[i]][4]
+            style_img[i, :, :img.shape[1], :img.shape[2]] = img
+            #이쪽 부분만 쫌 더 손봐보고 해보기! 다 0이 찍히는건 문제가 있음.
 
         # count number of items - characters in text
         len_x = [x[2] for x in batch]
         len_x = torch.Tensor(len_x)
 
-        #print('data_function, TextMelCollate2 ====> ', speaker_ids)
+        # for i in range(len(ids_sorted_decreasing)):
+        #     print('mel_padded.shape : ====> ', mel_padded[i].shape)
+        # for j in range(len(ids_sorted_decreasing)):
+        #     print('style_img.shape : =======> ', style_img[j].shape)
+
+        # print('data_function, TextMelCollate2 ====> ', style_img)
+        # print('data_function, TextMelCollate1 shape ====> ', style_img.shape)
         return text_padded, input_lengths, mel_padded, gate_padded, \
-            output_lengths, len_x, speaker_ids
+            output_lengths, len_x, speaker_ids, style_img
 
 def batch_to_gpu(batch):
     text_padded, input_lengths, mel_padded, gate_padded, \
-        output_lengths, len_x, speaker_ids = batch
+        output_lengths, len_x, speaker_ids, style_img = batch
     text_padded = to_gpu(text_padded).long()
     input_lengths = to_gpu(input_lengths).long()
     max_len = torch.max(input_lengths.data).item()
@@ -175,10 +239,11 @@ def batch_to_gpu(batch):
     output_lengths = to_gpu(output_lengths).long()
     #print('to gpu wjs data_function.py batch_to_gpu ===> ', speaker_ids)
     speaker_ids = to_gpu(speaker_ids).long()
+    style_img = to_gpu(style_img).float()
 
-    #print('data_function.py batch_to_gpu ===> ', speaker_ids)
+    #print('data_function.py batch_to_gpu ===> ', style_img)
 
-    x = (text_padded, input_lengths, mel_padded, max_len, output_lengths, speaker_ids)
+    x = (text_padded, input_lengths, mel_padded, max_len, output_lengths, speaker_ids, style_img)
     y = (mel_padded, gate_padded)
     len_x = torch.sum(output_lengths)
     return (x, y, len_x)
