@@ -145,7 +145,7 @@ def style_reconstruction(cnn, style_img, input_img, iters):
 
     # 하나의 값만 이용하기 위해 배열 형태로 사용
     run = [0]
-    while run[0] <= iters:
+    while flag:
 
         def closure():
             input_img.data.clamp_(0, 1)
@@ -173,8 +173,6 @@ def style_reconstruction(cnn, style_img, input_img, iters):
 
             return style_score
 
-        if flag == False:
-            break
 
         optimizer.step(closure)
 
@@ -200,7 +198,6 @@ f.close()
 
 num = 0
 
-lines = lines[2100:]
 total_lines_len = len(lines)
 # style transfer
 for line in lines:
@@ -223,9 +220,11 @@ for line in lines:
     plt.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0, wspace=0)
     plt.savefig(png_name, bbox_inches='tight', pad_inches=0)
     plt.close()
+
     # 이미지 resize
     img = Image.open(png_name)
-    resize_image = img.resize((int(b * 1.5), int(a * 1.5)))
+    shape_check_img = image_loader(png_name)
+    resize_image = img.resize((int(b * 1.5), shape_check_img.shape[2]))
     resize_image.save(png_name)
     target_image = image_loader(png_name)
 
@@ -256,6 +255,11 @@ for line in lines:
 
     plt.savefig(png_name, bbox_inches='tight', pad_inches=0)
     plt.close(fig)
+
+    final_temp_img = Image.open(png_name)
+    final_img_shape = image_loader(png_name)
+    final_img = final_temp_img.resize((int(b * 1.5), output.shape[2]))
+    final_img.save(png_name)
 
     num += 1
     print('{}개 중 {}개 완료'.format(total_lines_len, num))
