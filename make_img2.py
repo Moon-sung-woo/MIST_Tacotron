@@ -163,7 +163,7 @@ def style_reconstruction(cnn, style_img, input_img, iters):
 
             nonlocal flag, now_score
 
-            if style_score.item() < 1:
+            if style_score.item() < 10:
                 # print(f"[ Step: {run[0]} / Style loss: {style_score.item()}]")
                 # imshow(input_img)
                 flag = False
