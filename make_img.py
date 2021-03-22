@@ -191,7 +191,7 @@ style_layers = ['conv_1', 'conv_2', 'conv_3', 'conv_4', 'conv_5']
 cnn_normalization_mean = torch.tensor([0.485, 0.456, 0.406]).to(device)
 cnn_normalization_std = torch.tensor([0.229, 0.224, 0.225]).to(device)
 
-file_path = 'filelists/train_mel_file_list_1.txt'
+file_path = 'filelists/val_mel_file_list.txt'
 f = open(file_path, 'r', encoding='utf-8')
 lines = f.readlines()
 f.close()
