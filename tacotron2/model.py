@@ -680,11 +680,6 @@ class Tacotron2(nn.Module):
         inputs, input_lengths, targets, max_len, output_lengths, speaker_ids, style_img = inputs
         input_lengths, output_lengths = input_lengths.data, output_lengths.data
 
-        ############test 구간###########
-        print('style_img : ', style_img.shape)
-        style = self.style_encoder(style_img)
-
-        print('style.shape : ', style.shape)
 
         embedded_inputs = self.embedding(inputs).transpose(1, 2)
         ##############################여기 추가#########################################
@@ -692,15 +687,23 @@ class Tacotron2(nn.Module):
 
         embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
 
-        print('gst_targets.shape : ', targets.shape)
-        gst_outputs = self.gst(targets)
-        print('gst_outputs.shape : ', gst_outputs.shape)
-        embedded_gst = gst_outputs.repeat(1, transcript_outputs.size(1), 1)
-        print('embedded_gst shape : ', embedded_gst.shape)
+        ############style test 구간###########
+        # print('style_img : ', style_img.shape)
+        style = self.style_encoder(style_img)
+        # print('style.shape : ', style.shape)
+        embedded_style = style.repeat(1, transcript_outputs.size(1), 1)
+        # print('embedded_style.shape : ', embedded_style.shape)
+        #############test 구간 종료 #################
+
+        # print('gst_targets.shape : ', targets.shape)
+        # gst_outputs = self.gst(targets)
+        # print('gst_outputs.shape : ', gst_outputs.shape)
+        # embedded_gst = gst_outputs.repeat(1, transcript_outputs.size(1), 1)
+        # print('embedded_gst shape : ', embedded_gst.shape)
 
         #gst_outputs = gst_outputs.expand_as(transcript_outputs)
         embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
-        encoder_outputs = torch.cat((transcript_outputs, embedded_gst, embedded_speakers), dim=2)
+        encoder_outputs = torch.cat((transcript_outputs, embedded_style, embedded_speakers), dim=2)
 
         # encoder_outputs = transcript_outputs + gst_outputs + embedded_speakers
 

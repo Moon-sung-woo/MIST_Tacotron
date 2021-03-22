@@ -26,16 +26,16 @@ class ReferenceEncoder(nn.Module):
         self.bns = nn.ModuleList([nn.BatchNorm2d(num_features=ref_enc_filters[i]) for i in range(K)])
 
         # n_mels, 3, 2, 1, K) #여기서 채널에 대한 계산이 이루어 지니깐 여기도 같이 바꿔주면 됨.
-        out_channels = self.calculate_channels(640, 3, 2, 1, K)
+        out_channels = self.calculate_channels(480, 3, 2, 1, K)
         self.gru = nn.GRU(input_size=ref_enc_filters[-1] * out_channels,
-                          hidden_size=E // 2,
+                          hidden_size=E,
                           batch_first=True)
         self.n_mels = n_mels
 
     def forward(self, inputs):
         N = inputs.size(0)
         # 들어오는 이미지를 어떻게 처리해줄 건지에 대해서 생각해보고 넣어주면 됨.
-        out = inputs.view(N, 3, -1, inputs.size(3))  # [N, 1, Ty, n_mels]
+        out = inputs.view(N, 3, -1, inputs.size(2))  # [N, 1, Ty, n_mels]
         for conv, bn in zip(self.convs, self.bns):
             out = conv(out)
             out = bn(out)
@@ -45,37 +45,15 @@ class ReferenceEncoder(nn.Module):
         T = out.size(1)
         N = out.size(0)
         out = out.contiguous().view(N, T, -1)  # [N, Ty//2^K, 128*n_mels//2^K]
-
         _, out = self.gru(out)  # out --- [1, N, E//2]
-
-        return out.squeeze(0)
+        output = out.squeeze(0) # output [N, E//2]
+        output = torch.unsqueeze(output, 1) # output --- [N, 1, E//2]
+        return output
 
     def calculate_channels(self, L, kernel_size, stride, pad, n_convs):
         for _ in range(n_convs):
             L = (L - kernel_size + 2 * pad) // stride + 1
         return L
-
-
-class STL(nn.Module):
-    '''
-    inputs --- [N, E//2]
-    '''
-    def __init__(self, E, token_num, num_heads):
-        super().__init__()
-        self.embed = nn.Parameter(torch.FloatTensor(token_num, E // num_heads))
-        d_q = E // 2
-        d_k = E // num_heads
-        self.attention = MultiHeadAttention(query_dim=d_q, key_dim=d_k, num_units=E, num_heads=num_heads)
-
-        init.normal_(self.embed, mean=0, std=0.5)
-
-    def forward(self, inputs):
-        N = inputs.size(0)
-        query = inputs.unsqueeze(1)  # [N, 1, E//2]
-        keys = F.tanh(self.embed).unsqueeze(0).expand(N, -1, -1)  # [N, token_num, E // num_heads]
-        style_embed = self.attention(query, keys)
-
-        return style_embed
 
 
 class MultiHeadAttention(nn.Module):

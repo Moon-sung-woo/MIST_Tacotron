@@ -167,9 +167,6 @@ class TextMelCollate():
         y_max = max(shape_list, key=lambda x: x[1])[1] # y 최댓값
         x_max = max(shape_list, key=lambda x: x[2])[2] # x 최댓값
 
-
-
-
         # input_길이 확인하고 최대 input길이 확인하기 위해서[100, 80, 50, 30]
         # ids_sorted_decreasing : 입력으로 들어온 text들의 길이를 정렬할 때 순서 확인용[2,3,0,1]
         input_lengths, ids_sorted_decreasing = torch.sort(
@@ -212,7 +209,7 @@ class TextMelCollate():
             speaker_ids[i] = batch[ids_sorted_decreasing[i]][3]
             img = batch[ids_sorted_decreasing[i]][4]
             style_img[i, :, :img.shape[1], :img.shape[2]] = img
-            #이쪽 부분만 쫌 더 손봐보고 해보기! 다 0이 찍히는건 문제가 있음.
+
 
         # count number of items - characters in text
         len_x = [x[2] for x in batch]
