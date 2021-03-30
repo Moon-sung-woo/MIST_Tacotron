@@ -688,11 +688,8 @@ class Tacotron2(nn.Module):
         embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
 
         ############style test 구간###########
-        # print('style_img : ', style_img.shape)
         style = self.style_encoder(style_img)
-        # print('style.shape : ', style.shape)
         embedded_style = style.repeat(1, transcript_outputs.size(1), 1)
-        # print('embedded_style.shape : ', embedded_style.shape)
         #############test 구간 종료 #################
 
         # print('gst_targets.shape : ', targets.shape)
@@ -720,23 +717,31 @@ class Tacotron2(nn.Module):
             output_lengths)
 
 
-    def infer(self, inputs, input_lengths, ref_mel, emotion_id):
+    def infer(self, inputs, input_lengths, ref_mel, emotion_id, style_png):
 
         embedded_inputs = self.embedding(inputs).transpose(1, 2)
         transcript_outputs = self.encoder.infer(embedded_inputs, input_lengths)
 
-        ref_mel = torch.unsqueeze(ref_mel, 0) # [80, x] -> [1, 80, x]
-        ref_mel = ref_mel.half().cuda()
 
-        gst_outputs = self.gst(ref_mel)
-        gst_outputs = gst_outputs.repeat(1, transcript_outputs.size(1), 1)
+        print(style_png.shape)
+        style_png = torch.unsqueeze(style_png, 0)  # [3, 480, x] -> [1, 3, 480,x]
+        style_png = style_png.half().cuda()
+
+        style = self.style_encoder(style_png)
+        embedded_style = style.repeat(1, transcript_outputs.size(1), 1)
+        # ref_mel = torch.unsqueeze(ref_mel, 0) # [80, x] -> [1, 80, x]
+        # ref_mel = ref_mel.half().cuda()
+        #
+        # gst_outputs = self.gst(ref_mel)
+        # gst_outputs = gst_outputs.
+        # repeat(1, transcript_outputs.size(1), 1)
 
         embedded_speakers = self.speaker_embedding(emotion_id)[:, None]
         embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
 
-        encoder_outputs = torch.cat((transcript_outputs, gst_outputs, embedded_speakers), dim=2)
+        encoder_outputs = torch.cat((transcript_outputs, embedded_style, embedded_speakers), dim=2)
 
-        #encoder_outputs = transcript_outputs + gst_outputs
+        # encoder_outputs = transcript_outputs + gst_outputs
 
 
         mel_outputs, gate_outputs, alignments, mel_lengths = self.decoder.infer(

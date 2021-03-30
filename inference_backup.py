@@ -34,8 +34,6 @@ import numpy as np
 from scipy.io.wavfile import write
 import matplotlib
 import matplotlib.pyplot as plt
-import torchvision.transforms as transforms
-import PIL
 
 import sys
 
@@ -208,14 +206,6 @@ def load_mel(path):
     melspec = torch.squeeze(melspec, 0)
     return melspec
 
-def image_loader(img_path):
-    loader = transforms.Compose([
-        transforms.ToTensor()  # torch.Tensor 형식으로 변경 [0, 255] → [0, 1]
-    ])
-    image = PIL.Image.open(img_path).convert('RGB')
-    image = loader(image)
-    return image
-
 
 class MeasureTime():
     def __init__(self, measurements, key, cpu_run=False):
@@ -274,21 +264,19 @@ def main():
     ref_mel = load_mel(args.ref_mel)
     id_list.append(args.emotion_id)
     emotion_id = torch.LongTensor(id_list).cuda()
-    png_path = 'dataset/hap/img/acriil_hap_00000052.png'
-    style_png = image_loader(png_path)
     print(emotion_id)
     #-------------------------------------------------------------------------------------------------------------------
 
 
     if args.include_warmup:
-        sequence = torch.randint(low=0, high=80, size=(1, 50)).long()
+        sequence = torch.randint(low=0, high=80, size=(1,50)).long()
         input_lengths = torch.IntTensor([sequence.size(1)]).long()
         if not args.cpu:
             sequence = sequence.cuda()
             input_lengths = input_lengths.cuda()
         for i in range(3):
             with torch.no_grad():
-                mel, mel_lengths, _ = jitted_tacotron2(sequence, input_lengths, ref_mel, emotion_id, style_png)
+                mel, mel_lengths, _ = jitted_tacotron2(sequence, input_lengths, ref_mel, emotion_id)
                 _ = waveglow(mel)
 
     measurements = {}
@@ -296,7 +284,7 @@ def main():
     sequences_padded, input_lengths = prepare_input_sequence(texts, args.cpu)
 
     with torch.no_grad(), MeasureTime(measurements, "tacotron2_time", args.cpu):
-        mel, mel_lengths, alignments = jitted_tacotron2(sequences_padded, input_lengths, ref_mel, emotion_id, style_png)
+        mel, mel_lengths, alignments = jitted_tacotron2(sequences_padded, input_lengths, ref_mel, emotion_id)
 
     with torch.no_grad(), MeasureTime(measurements, "waveglow_time", args.cpu):
         audios = waveglow(mel, sigma=args.sigma_infer)
