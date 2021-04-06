@@ -266,7 +266,7 @@ class Decoder(nn.Module):
         super(Decoder, self).__init__()
         self.n_mel_channels = n_mel_channels
         self.n_frames_per_step = n_frames_per_step
-        self.encoder_embedding_dim = encoder_embedding_dim + E + speaker_embedding_dim
+        self.encoder_embedding_dim = encoder_embedding_dim + E # + speaker_embedding_dim # speaker_id 쓸때만 이거 값 더해주기!
         self.attention_rnn_dim = attention_rnn_dim
         self.decoder_rnn_dim = decoder_rnn_dim
         self.prenet_dim = prenet_dim
@@ -685,7 +685,10 @@ class Tacotron2(nn.Module):
         ##############################여기 추가#########################################
         transcript_outputs = self.encoder(embedded_inputs, input_lengths)
 
-        embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
+        ############speaker_id 추가 구간###########
+        # embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
+        # embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
+        #############speaker_id 구간 종료 #################
 
         ############style test 구간###########
         style = self.style_encoder(style_img)
@@ -699,8 +702,8 @@ class Tacotron2(nn.Module):
         # print('embedded_gst shape : ', embedded_gst.shape)
 
         #gst_outputs = gst_outputs.expand_as(transcript_outputs)
-        embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
-        encoder_outputs = torch.cat((transcript_outputs, embedded_style, embedded_speakers), dim=2)
+
+        encoder_outputs = torch.cat((transcript_outputs, embedded_style), dim=2)
 
         # encoder_outputs = transcript_outputs + gst_outputs + embedded_speakers
 
@@ -736,10 +739,10 @@ class Tacotron2(nn.Module):
         # gst_outputs = gst_outputs.
         # repeat(1, transcript_outputs.size(1), 1)
 
-        embedded_speakers = self.speaker_embedding(emotion_id)[:, None]
-        embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
+        # embedded_speakers = self.speaker_embedding(emotion_id)[:, None]
+        # embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
 
-        encoder_outputs = torch.cat((transcript_outputs, embedded_style, embedded_speakers), dim=2)
+        encoder_outputs = torch.cat((transcript_outputs, embedded_style), dim=2) #, embedded_speakers), dim=2)
 
         # encoder_outputs = transcript_outputs + gst_outputs
 

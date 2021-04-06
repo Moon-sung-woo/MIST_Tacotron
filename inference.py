@@ -97,6 +97,7 @@ def parse_args(parser):
     parser.add_argument('--n_speakers', type=int, default=32) #7로 바꿔도 괜찮은지 확인
     parser.add_argument('--speaker_embedding_dim', type=int, default=128)
     parser.add_argument('--emotion_id', type=int, default=1)
+    parser.add_argument('--png_path', type=str, required=True)
 
 
     return parser
@@ -274,8 +275,8 @@ def main():
     ref_mel = load_mel(args.ref_mel)
     id_list.append(args.emotion_id)
     emotion_id = torch.LongTensor(id_list).cuda()
-    png_path = 'dataset/hap/img/acriil_hap_00000052.png'
-    style_png = image_loader(png_path)
+    # png_path = 'dataset/hap/img/acriil_hap_00000052.png'
+    style_png = image_loader(args.png_path)
     print(emotion_id)
     #-------------------------------------------------------------------------------------------------------------------
 
@@ -318,12 +319,13 @@ def main():
     for i, audio in enumerate(audios):
 
         plt.imshow(alignments[i].float().data.cpu().numpy().T, aspect="auto", origin="lower")
-        figure_path = os.path.join(args.output,"alignment_"+str(i)+args.suffix+".png")
+        figure_path = os.path.join(args.output, "alignment_"+str(i)+args.suffix+".png")
         plt.savefig(figure_path)
 
         audio = audio[:mel_lengths[i]*args.stft_hop_length]
         audio = audio/torch.max(torch.abs(audio))
-        audio_path = os.path.join(args.output,"audio_"+str(i)+args.suffix+".wav")
+        # audio_path = os.path.join(args.output, "audio_"+str(i)+args.suffix+".wav")
+        audio_path = os.path.join(args.output, "audio_{}.wav".format(args.emotion_id))
         write(audio_path, args.sampling_rate, audio.cpu().numpy())
 
     DLLogger.flush()
