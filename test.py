@@ -208,8 +208,8 @@ style_layers = ['conv_1', 'conv_2', 'conv_3', 'conv_4', 'conv_5']
 cnn_normalization_mean = torch.tensor([0.485, 0.456, 0.406]).to(device)
 cnn_normalization_std = torch.tensor([0.229, 0.224, 0.225]).to(device)
 
-wave_path = 'dataset/sur/wav/acriil_sur_00001484.wav'
-png_name = 'dataset/sur/img/acriil_sur_00001484.png'
+wave_path = 'another_audio/nem00397.wav'
+png_name = 'test_file/nem00397.png'
 
 mel = load_mel(wave_path)
 m = mel.numpy()
