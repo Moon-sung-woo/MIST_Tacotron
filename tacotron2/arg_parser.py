@@ -48,7 +48,7 @@ def tacotron2_parser(parent, add_help=False):
     symbols = parser.add_argument_group('symbols parameters')
     symbols.add_argument('--n-symbols', default=len_symbols, type=int,
                          help='Number of symbols in dictionary')
-    symbols.add_argument('--symbols-embedding-dim', default=512, type=int,
+    symbols.add_argument('--symbols-embedding-dim', default=256, type=int,
                          help='Input embedding dimension')
 
     # encoder parameters
@@ -57,7 +57,7 @@ def tacotron2_parser(parent, add_help=False):
                          help='Encoder kernel size')
     encoder.add_argument('--encoder-n-convolutions', default=3, type=int,
                          help='Number of encoder convolutions')
-    encoder.add_argument('--encoder-embedding-dim', default=512, type=int,
+    encoder.add_argument('--encoder-embedding-dim', default=256, type=int,
                          help='Encoder embedding dimension')
 
     # decoder parameters

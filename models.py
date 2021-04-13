@@ -140,8 +140,8 @@ def get_model_config(model_name, args):
             n_mels=args.n_mels,
 
             n_speakers=args.n_speakers,
-            speaker_embedding_dim=args.speaker_embedding_dim
-
+            speaker_embedding_dim=args.speaker_embedding_dim,
+            z_latent_dim=args.z_latent_dim
 
         )
         return model_config

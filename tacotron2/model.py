@@ -42,7 +42,7 @@ from tacotron2.modules import GST
 from tacotron2.style_modules import Style_encoder
 
 from tacotron2.data_function import TextMelLoader
-
+from tacotron2.vae_modules import VAE_GST
 
 class LocationLayer(nn.Module):
     def __init__(self, attention_n_filters, attention_kernel_size,
@@ -615,7 +615,7 @@ class Tacotron2(nn.Module):
                  ### 여기 추가#########
                  E, ref_enc_filters, ref_enc_size, ref_enc_strides,
                  ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels,
-                 n_speakers, speaker_embedding_dim):
+                 n_speakers, speaker_embedding_dim, z_latent_dim):
         super(Tacotron2, self).__init__()
         self.mask_padding = mask_padding
         self.n_mel_channels = n_mel_channels
@@ -647,6 +647,8 @@ class Tacotron2(nn.Module):
 
         self.style_encoder = Style_encoder(E, ref_enc_filters, ref_enc_size, ref_enc_strides,
                  ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels )
+
+        self.vae_gst = VAE_GST(E, ref_enc_filters, n_mels, ref_enc_gru_size, z_latent_dim)
 
     def parse_batch(self, batch):
         text_padded, input_lengths, mel_padded, gate_padded, \
@@ -682,8 +684,10 @@ class Tacotron2(nn.Module):
 
 
         embedded_inputs = self.embedding(inputs).transpose(1, 2)
-        ##############################여기 추가#########################################
         transcript_outputs = self.encoder(embedded_inputs, input_lengths)
+        # print('=====================>transcript_outputs shape : ', transcript_outputs.shape)
+
+        ##############################여기 추가#########################################
 
         ############speaker_id 추가 구간###########
         # embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
@@ -691,20 +695,23 @@ class Tacotron2(nn.Module):
         #############speaker_id 구간 종료 #################
 
         ############style test 구간###########
-        style = self.style_encoder(style_img)
-        embedded_style = style.repeat(1, transcript_outputs.size(1), 1)
+        # style = self.style_encoder(style_img)
+        # embedded_style = style.repeat(1, transcript_outputs.size(1), 1)
         #############test 구간 종료 #################
 
-        # print('gst_targets.shape : ', targets.shape)
+        ############GST 구간###########
         # gst_outputs = self.gst(targets)
-        # print('gst_outputs.shape : ', gst_outputs.shape)
         # embedded_gst = gst_outputs.repeat(1, transcript_outputs.size(1), 1)
-        # print('embedded_gst shape : ', embedded_gst.shape)
+        # gst_outputs = gst_outputs.expand_as(transcript_outputs)
+        ############GST 구간 종료###########
 
-        #gst_outputs = gst_outputs.expand_as(transcript_outputs)
+        ############VAE 구간 시작###########
+        prosody_outputs, mu, logvar, z = self.vae_gst(targets) # get z
+        prosody_outputs = prosody_outputs.unsqueeze(1).expand_as(transcript_outputs)
+        ############VAE 구간 종료###########
 
-        encoder_outputs = torch.cat((transcript_outputs, embedded_style), dim=2)
 
+        encoder_outputs = torch.cat((transcript_outputs, prosody_outputs), dim=2)
         # encoder_outputs = transcript_outputs + gst_outputs + embedded_speakers
 
         ###############################################################################

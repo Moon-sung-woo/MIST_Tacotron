@@ -1,9 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.modules.conv as conv
-from hparams import create_hparams
 
-hparams = create_hparams()
+fp16_run = False
 
 class AddCoords(nn.Module):
     def __init__(self, rank, with_r=False):
@@ -63,7 +62,7 @@ class AddCoords(nn.Module):
                 input_tensor = input_tensor.cuda()
                 xx_channel = xx_channel.cuda()
                 yy_channel = yy_channel.cuda()
-            if hparams.fp16_run:
+            if fp16_run:
                 input_tensor = input_tensor.half()
                 xx_channel = xx_channel.half()
                 yy_channel = yy_channel.half()

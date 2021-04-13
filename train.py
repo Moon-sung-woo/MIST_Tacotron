@@ -90,6 +90,7 @@ def parse_args(parser):
     parser.add_argument('--ref_enc_strides', nargs='*', default=[2, 2])
     parser.add_argument('--ref_enc_pad', nargs='*', default=[1, 1])
     parser.add_argument('--ref_enc_gru_size', type=int, default=256 // 2)
+    parser.add_argument('--z_latent_dim', type=int, default=32)
 
     # Style Token Layer
     parser.add_argument('--token_num', type=int, default=10)

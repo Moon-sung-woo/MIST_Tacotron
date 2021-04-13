@@ -5,12 +5,12 @@ import torch.nn.functional as F
 from tacotron2.CoordConv import CoordConv2d
 
 class VAE_GST(nn.Module):
-    def __init__(self, hparams):
+    def __init__(self, E, ref_enc_filters, n_mels, ref_enc_gru_size, z_latent_dim):
         super().__init__()
-        self.ref_encoder = ReferenceEncoder(hparams)
-        self.fc1 = nn.Linear(hparams.ref_enc_gru_size, hparams.z_latent_dim)
-        self.fc2 = nn.Linear(hparams.ref_enc_gru_size, hparams.z_latent_dim)
-        self.fc3 = nn.Linear(hparams.z_latent_dim, hparams.E)
+        self.ref_encoder = ReferenceEncoder(E, ref_enc_filters, n_mels)
+        self.fc1 = nn.Linear(ref_enc_gru_size, z_latent_dim)
+        self.fc2 = nn.Linear(ref_enc_gru_size, z_latent_dim)
+        self.fc3 = nn.Linear(z_latent_dim, E)
 
     def reparameterize(self, mu, logvar):
         if self.training:
@@ -36,10 +36,10 @@ class ReferenceEncoder(nn.Module):
     outputs --- [N, ref_enc_gru_size]
     '''
 
-    def __init__(self, hparams):
+    def __init__(self, E, ref_enc_filters, n_mels):
         super().__init__()
-        K = len(hparams.ref_enc_filters)
-        filters = [1] + hparams.ref_enc_filters
+        K = len(ref_enc_filters)
+        filters = [1] + ref_enc_filters
         # 첫번째 레이어로 CoordConv를 사용하는 것이 positional 정보를 잘 보존한다고 함. https://arxiv.org/pdf/1811.02122.pdf
         convs = [CoordConv2d(in_channels=filters[0],
                              out_channels=filters[0 + 1],
@@ -53,13 +53,13 @@ class ReferenceEncoder(nn.Module):
                             padding=(1, 1)) for i in range(1, K)]
         convs.extend(convs2)
         self.convs = nn.ModuleList(convs)
-        self.bns = nn.ModuleList([nn.BatchNorm2d(num_features=hparams.ref_enc_filters[i]) for i in range(K)])
+        self.bns = nn.ModuleList([nn.BatchNorm2d(num_features=ref_enc_filters[i]) for i in range(K)])
 
-        out_channels = self.calculate_channels(hparams.n_mel_channels, 3, 2, 1, K)
-        self.gru = nn.GRU(input_size=hparams.ref_enc_filters[-1] * out_channels,
-                          hidden_size=hparams.E // 2,
+        out_channels = self.calculate_channels(n_mels, 3, 2, 1, K)
+        self.gru = nn.GRU(input_size=ref_enc_filters[-1] * out_channels,
+                          hidden_size=E // 2,
                           batch_first=True)
-        self.n_mels = hparams.n_mel_channels
+        self.n_mels = n_mels
 
     def forward(self, inputs):
         N = inputs.size(0)
