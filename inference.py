@@ -98,6 +98,7 @@ def parse_args(parser):
     parser.add_argument('--speaker_embedding_dim', type=int, default=128)
     parser.add_argument('--emotion_id', type=int, default=1)
     parser.add_argument('--png_path', type=str, required=True)
+    parser.add_argument('--z_latent_dim', type=int, default=32)
 
 
     return parser
