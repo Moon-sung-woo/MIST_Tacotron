@@ -732,15 +732,13 @@ class Tacotron2(nn.Module):
         embedded_inputs = self.embedding(inputs).transpose(1, 2)
         transcript_outputs = self.encoder.infer(embedded_inputs, input_lengths)
 
+        ############################################################################
         ref_mel = torch.unsqueeze(ref_mel, 0)
         ref_mel = ref_mel.half().cuda()
-
-
-        print(ref_mel)
-        print(ref_mel.shape)
         prosody_outputs, mu, logvar, z = self.vae_gst(ref_mel) # get z
         prosody_outputs = prosody_outputs.unsqueeze(1).expand_as(transcript_outputs)
         # VAE 할때는 CoordConv.py 65번째 True로 바꿔서 해야됨!!
+        ############################################################################
 
         # ###########################################################################
         # print(style_png.shape)

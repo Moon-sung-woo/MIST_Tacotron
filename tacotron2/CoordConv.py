@@ -24,7 +24,7 @@ class AddCoords(nn.Module):
             xx_channel = xx_channel * 2 - 1
             xx_channel = xx_channel.repeat(batch_size_shape, 1, 1)
 
-            if True:
+            if True: # 학습시에는 fp16인가 하는거로 바꿔놔야됨
                 input_tensor = input_tensor.cuda()
                 xx_channel = xx_channel.cuda()
             out = torch.cat([input_tensor, xx_channel], dim=1)
@@ -58,11 +58,11 @@ class AddCoords(nn.Module):
             xx_channel = xx_channel.repeat(batch_size_shape, 1, 1, 1)
             yy_channel = yy_channel.repeat(batch_size_shape, 1, 1, 1)
 
-            if True:
+            if True: # 학습시에는 fp16인가 하는거로 바꿔놔야됨
                 input_tensor = input_tensor.cuda()
                 xx_channel = xx_channel.cuda()
                 yy_channel = yy_channel.cuda()
-            if True:
+            if False: #inference 할 때는 True로 바꿔줘야 돌아간다.
                 input_tensor = input_tensor.half()
                 xx_channel = xx_channel.half()
                 yy_channel = yy_channel.half()
@@ -98,7 +98,7 @@ class AddCoords(nn.Module):
             zx_channel = zx_channel.permute(0, 1, 4, 2, 3)
             zz_channel = torch.cat([zx_channel + i for i in range(dim_y)], dim=3)
 
-            if True:
+            if True: # 학습시에는 fp16인가 하는거로 바꿔놔야됨
                 input_tensor = input_tensor.cuda()
                 xx_channel = xx_channel.cuda()
                 yy_channel = yy_channel.cuda()

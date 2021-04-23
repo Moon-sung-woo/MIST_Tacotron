@@ -5,6 +5,8 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torchvision.transforms as transforms
 import torchvision.models as models
+from common.layers import TacotronSTFT
+from common.utils import load_wav_to_torch
 
 import copy
 import PIL
@@ -13,7 +15,7 @@ import matplotlib.pyplot as plt
 import librosa.display
 
 # GPU 장치 사용 설정
-GPU_NUM = 1
+GPU_NUM = 0
 device = torch.device(f'cuda:{GPU_NUM}' if torch.cuda.is_available() else 'cpu')
 torch.cuda.set_device(device) # change allocation of current GPU
 
@@ -32,11 +34,11 @@ def image_loader(img_path):
 
 
 def get_png_name(pt_path):
-    # pt_path = 'dataset/hap/mel/acriil_hap_00000017.pt'
+    # pt_path = 'emotion_dataset/Personality/pfa/wav/pfa00001.wav'
     pt_path = pt_path.split('/')
-    pt_path[2] = 'img'
-    png_name = pt_path[3].replace('.pt', '.png')
-    pt_path[3] = png_name
+    pt_path[3] = 'img'
+    png_name = pt_path[4].replace('.wav', '.png')
+    pt_path[4] = png_name
     style_png_name = '/'.join(pt_path)
 
     return style_png_name
@@ -181,6 +183,20 @@ def style_reconstruction(cnn, style_img, input_img, iters):
 
     return input_img
 
+def load_mel(path):
+    stft = TacotronSTFT()
+    audio, sampling_rate = load_wav_to_torch(path)
+    if sampling_rate != 16000:
+        raise ValueError("{} SR doesn't match target {} SR".format(
+            sampling_rate, stft.sampling_rate))
+    audio_norm = audio / 32768.0 # hparams.max_wav_value
+    audio_norm = audio_norm.unsqueeze(0)
+    audio_norm = torch.autograd.Variable(audio_norm, requires_grad=False)
+    melspec = stft.mel_spectrogram(audio_norm)
+    #melspec = melspec.cuda()
+    melspec = torch.squeeze(melspec, 0)
+    return melspec
+
 
 # 뉴럴 네트워크 모델을 불러옵니다.
 
@@ -191,7 +207,7 @@ style_layers = ['conv_1', 'conv_2', 'conv_3', 'conv_4', 'conv_5']
 cnn_normalization_mean = torch.tensor([0.485, 0.456, 0.406]).to(device)
 cnn_normalization_std = torch.tensor([0.229, 0.224, 0.225]).to(device)
 
-file_path = 'filelists/val_mel_file_list.txt'
+file_path = 'filelists/sum_multy_filelist2.txt'
 f = open(file_path, 'r', encoding='utf-8')
 lines = f.readlines()
 f.close()
@@ -200,16 +216,16 @@ num = 0
 
 total_lines_len = len(lines)
 # style transfer
-for line in lines:
+for line in lines[:total_lines_len//2]:
     print('변경 시작 : ', line.split('|')[0])
-    pt_path = line.split('|')[0]  # .pt 경로
+    wav_path = line.split('|')[0]  # .wav 경로
 
     # 저장할 png file 이름
-    png_name = get_png_name(pt_path)
+    png_name = get_png_name(wav_path)
     print(png_name)
 
     # 기존 .pt파일을 png파일로 저장
-    m = torch.load(pt_path)
+    m = load_mel(wav_path)
     m = m.numpy() # 이미지로 만들기 위해 넘파이로 변경
     a, b = m.shape
 

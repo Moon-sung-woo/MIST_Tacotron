@@ -11,12 +11,13 @@ trim_top_db = 23
 
 def preprocess_audio(file_list, silence_audio_size):
     for F in file_list:
-        f = open(F)
+        f = open(F, encoding='utf-8')
         R = f.readlines()
         f.close()
         print('='*5+F+'='*5)
 
         for i, r in enumerate(R):
+            print(r)
             wav_file = r.split('|')[0]
             data, sampling_rate = librosa.core.load(wav_file, sr)
             data = data / np.abs(data).max() *0.999
@@ -26,8 +27,7 @@ def preprocess_audio(file_list, silence_audio_size):
             data_ = data_.astype(dtype=np.int16)
             write(wav_file, sr, data_)
             #print(len(data),len(data_))
-            if(i%100 == 0):
-                print (i)
+
 
 if __name__ == "__main__":
     """
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     python preprocess_audio.py -f=filelists/nam-h_test_filelist.txt,filelists/nam-h_train_filelist.txt,filelists/nam-h_val_filelist.txt -s=3
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file_list', type=str, default='filelists/train_data.txt',
+    parser.add_argument('-f', '--file_list', type=str, default='filelists/sum_multy_filelist2.txt',
                         help='file list to preprocess')
     parser.add_argument('-s', '--silence_mel_padding', type=int, default=3,
                         help='silence audio size is hop_length * silence mel padding')
