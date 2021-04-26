@@ -90,7 +90,7 @@ def parse_args(parser):
     parser.add_argument('--ref_enc_strides', nargs='*', default=[2, 2])
     parser.add_argument('--ref_enc_pad', nargs='*', default=[1, 1])
     parser.add_argument('--ref_enc_gru_size', type=int, default=256 // 2)
-    parser.add_argument('--z_latent_dim', type=int, default=32)
+    # parser.add_argument('--z_latent_dim', type=int, default=32)
 
     # Style Token Layer
     parser.add_argument('--token_num', type=int, default=10)
@@ -99,7 +99,10 @@ def parse_args(parser):
     parser.add_argument('--n_mels', type=int, default=80)
 
     # speaker id
-    parser.add_argument('--n_speakers', type=int, default=32)
+    parser.add_argument('--n_emotions', type=int, default=4) #총 4개 감정
+    parser.add_argument('--emotion_embedding_dim', type=int, default=128)
+
+    parser.add_argument('--n_speakers', type=int, default=40) #총 40명
     parser.add_argument('--speaker_embedding_dim', type=int, default=128)
 
 
@@ -146,10 +149,10 @@ def parse_args(parser):
     dataset.add_argument('--load-mel-from-disk', action='store_true',
                          help='Loads mel spectrograms from disk instead of computing them on the fly')
     dataset.add_argument('--training-files',
-                         default='filelists/train_file_list4.txt',
+                         default='filelists/multi_train_file_list.txt',
                          type=str, help='Path to training filelist')
     dataset.add_argument('--validation-files',
-                         default='filelists/val_file_list4.txt',
+                         default='filelists/multi_val_file_list.txt',
                          type=str, help='Path to validation filelist')
     dataset.add_argument('--text-cleaners', nargs='*',
                          default=['korean_cleaners'], type=str,
@@ -475,7 +478,7 @@ def main():
                               drop_last=True, collate_fn=collate_fn)
 
     valset = data_functions.get_data_loader(
-        model_name, args.dataset_path, args.validation_files, args, speaker_ids=trainset.speaker_ids)
+        model_name, args.dataset_path, args.validation_files, args, emotion_id=trainset.emotion_ids, speaker_ids=trainset.speaker_ids)
 
     batch_to_gpu = data_functions.get_batch_to_gpu(model_name)
 

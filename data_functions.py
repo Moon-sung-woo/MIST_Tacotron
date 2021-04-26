@@ -45,12 +45,12 @@ def get_collate_function(model_name, n_frames_per_step=1):
     return collate_fn
 
 
-def get_data_loader(model_name, dataset_path, audiopaths_and_text, args, speaker_ids=None):
+def get_data_loader(model_name, dataset_path, audiopaths_and_text, args, emotion_id=None, speaker_ids=None):
     if model_name == 'Tacotron2':
-        if speaker_ids is not None:
-            data_loader = TextMelLoader(dataset_path, audiopaths_and_text, args, speaker_ids=speaker_ids)
-        else:
+        if speaker_ids is None:
             data_loader = TextMelLoader(dataset_path, audiopaths_and_text, args)
+        else:
+            data_loader = TextMelLoader(dataset_path, audiopaths_and_text, args, emotion_ids=emotion_id, speaker_ids=speaker_ids)
     elif model_name == 'WaveGlow':
         data_loader = MelAudioLoader(dataset_path, audiopaths_and_text, args)
     else:

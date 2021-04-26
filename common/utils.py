@@ -64,13 +64,14 @@ def load_filepaths_and_text(dataset_path, filename, split="|"):
     with open(filename, encoding='utf-8') as f:
         def split_line(root, line):
             parts = line.strip().split(split)
-            if len(parts) > 3:
+            if len(parts) > 4:
                 raise Exception(
                     "incorrect line format for file: {}".format(filename))
             path = os.path.join(root, parts[0])
             text = parts[1]
             emotion = parts[2]
-            return path, text, emotion
+            speaker = parts[3]
+            return path, text, emotion, speaker
         filepaths_and_text = [split_line(dataset_path, line) for line in f]
     return filepaths_and_text
 
