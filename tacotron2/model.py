@@ -42,7 +42,7 @@ from tacotron2.modules import GST
 from tacotron2.style_modules import Style_encoder
 
 from tacotron2.data_function import TextMelLoader
-
+from tacotron2.vae_modules import VAE_GST
 
 class LocationLayer(nn.Module):
     def __init__(self, attention_n_filters, attention_kernel_size,
@@ -266,7 +266,7 @@ class Decoder(nn.Module):
         super(Decoder, self).__init__()
         self.n_mel_channels = n_mel_channels
         self.n_frames_per_step = n_frames_per_step
-        self.encoder_embedding_dim = encoder_embedding_dim + E + emotion_embedding_dim + speaker_embedding_dim
+        self.encoder_embedding_dim = encoder_embedding_dim + E #+ emotion_embedding_dim + speaker_embedding_dim # speaker_id 쓸때만 이거 값 더해주기!
         self.attention_rnn_dim = attention_rnn_dim
         self.decoder_rnn_dim = decoder_rnn_dim
         self.prenet_dim = prenet_dim
@@ -615,7 +615,7 @@ class Tacotron2(nn.Module):
                  ### 여기 추가#########
                  E, ref_enc_filters, ref_enc_size, ref_enc_strides,
                  ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels,
-                 n_emotions, emotion_embedding_dim, n_speakers, speaker_embedding_dim):
+                 n_emotions, emotion_embedding_dim, n_speakers, speaker_embedding_dim, z_latent_dim):
         super(Tacotron2, self).__init__()
         self.mask_padding = mask_padding
         self.n_mel_channels = n_mel_channels
@@ -640,7 +640,9 @@ class Tacotron2(nn.Module):
                                postnet_kernel_size,
                                postnet_n_convolutions)
 
-        self.emotion_embedding = nn.Embedding(n_emotions, emotion_embedding_dim)
+        #multi style withoutID할때는 이거 주석처리 해줘야지 돌아감!!
+        # self.emotion_embedding = nn.Embedding(n_emotions, emotion_embedding_dim)
+
         self.speaker_embedding = nn.Embedding(n_speakers, speaker_embedding_dim)
 
         self.gst = GST(E, ref_enc_filters, ref_enc_size, ref_enc_strides,
@@ -648,6 +650,7 @@ class Tacotron2(nn.Module):
 
         self.style_encoder = Style_encoder(E, ref_enc_filters, ref_enc_size, ref_enc_strides,
                  ref_enc_pad, ref_enc_gru_size, token_num, num_heads, n_mels )
+        self.vae_gst = VAE_GST(E, ref_enc_filters, n_mels, ref_enc_gru_size, z_latent_dim)
 
     def parse_batch(self, batch):
         text_padded, input_lengths, mel_padded, gate_padded, \
@@ -678,35 +681,44 @@ class Tacotron2(nn.Module):
         return outputs
 
     def forward(self, inputs):
-        inputs, input_lengths, targets, max_len, output_lengths, emotion_ids, style_img, speaker_ids  = inputs
+        inputs, input_lengths, targets, max_len, output_lengths, emotion_ids, style_img, speaker_ids = inputs
         input_lengths, output_lengths = input_lengths.data, output_lengths.data
 
 
         embedded_inputs = self.embedding(inputs).transpose(1, 2)
-        ##############################여기 추가#########################################
         transcript_outputs = self.encoder(embedded_inputs, input_lengths)
+        # print('=====================>transcript_outputs shape : ', transcript_outputs.shape)
 
-        embedded_emotions = self.emotion_embedding(emotion_ids)[:, None]
-        embedded_emotions = embedded_emotions.repeat(1, transcript_outputs.size(1), 1)
+        ##############################여기 추가#########################################
 
-        embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
-        embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
+        ############speaker_id 추가 구간###########
+        # embedded_emotions = self.emotion_embedding(emotion_ids)[:, None]
+        # embedded_emotions = embedded_emotions.repeat(1, transcript_outputs.size(1), 1)
+        #
+        # embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
+        # embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
+        #############speaker_id 구간 종료 #################
 
         ############style test 구간###########
         style = self.style_encoder(style_img)
         embedded_style = style.repeat(1, transcript_outputs.size(1), 1)
-        #############test 구간 종료 #################
+        #############style 구간 종료 #################
 
-        # print('gst_targets.shape : ', targets.shape)
+        ############GST 구간###########
         # gst_outputs = self.gst(targets)
-        # print('gst_outputs.shape : ', gst_outputs.shape)
         # embedded_gst = gst_outputs.repeat(1, transcript_outputs.size(1), 1)
-        # print('embedded_gst shape : ', embedded_gst.shape)
+        # gst_outputs = gst_outputs.expand_as(transcript_outputs)
+        ############GST 구간 종료###########
 
-        #gst_outputs = gst_outputs.expand_as(transcript_outputs)
+        ############VAE 구간 시작###########
+        # prosody_outputs, mu, logvar, z = self.vae_gst(targets) # get z
+        # prosody_outputs = prosody_outputs.unsqueeze(1).expand_as(transcript_outputs)
+        ############VAE 구간 종료###########
 
-        encoder_outputs = torch.cat((transcript_outputs, embedded_style, embedded_emotions, embedded_speakers), dim=2)
+        # GST만 할 경우
+        # encoder_outputs = transcript_outputs + gst_outputs
 
+        encoder_outputs = torch.cat((transcript_outputs, embedded_style), dim=2)
         # encoder_outputs = transcript_outputs + gst_outputs + embedded_speakers
 
         ###############################################################################
@@ -727,24 +739,45 @@ class Tacotron2(nn.Module):
         embedded_inputs = self.embedding(inputs).transpose(1, 2)
         transcript_outputs = self.encoder.infer(embedded_inputs, input_lengths)
 
+        ################################vae tacotron ############################################
+        # ref_mel = torch.unsqueeze(ref_mel, 0)
+        # ref_mel = ref_mel.half().cuda()
+        # prosody_outputs, mu, logvar, z = self.vae_gst(ref_mel) # get z
+        # prosody_outputs = prosody_outputs.unsqueeze(1).expand_as(transcript_outputs)
+        # encoder_outputs = torch.cat((transcript_outputs, prosody_outputs), dim=2)
+        # VAE 할때는 CoordConv.py 65번째 True로 바꿔서 해야됨!!
+        ############################################################################
 
+        ##############################GST Tacotron##############################################
+        # ref_mel = torch.unsqueeze(ref_mel, 0)  # [80, x] -> [1, 80, x]
+        # ref_mel = ref_mel.half().cuda()
+        #
+        # gst_outputs = self.gst(ref_mel)
+        # gst_outputs = gst_outputs.expand_as(transcript_outputs)
+        # # 이건 GST만 할 때
+        # # encoder_outputs = transcript_outputs + gst_outputs
+        ############################################################################
+
+        #############################emotion###############################################
+        # embedded_emotion = self.emotion_embedding(emotion_id)[:, None]
+        # embedded_emotion = embedded_emotion.repeat(1, transcript_outputs.size(1), 1)
+        ############################################################################
+
+        #############################speaker###############################################
+        # embedded_speakers = self.speaker_embedding(speaker_ids)[:, None]
+        # embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
+        ############################################################################
+
+        # ############################style tacotron###############################################
         print(style_png.shape)
         style_png = torch.unsqueeze(style_png, 0)  # [3, 480, x] -> [1, 3, 480,x]
         style_png = style_png.half().cuda()
 
         style = self.style_encoder(style_png)
         embedded_style = style.repeat(1, transcript_outputs.size(1), 1)
-        # ref_mel = torch.unsqueeze(ref_mel, 0) # [80, x] -> [1, 80, x]
-        # ref_mel = ref_mel.half().cuda()
-        #
-        # gst_outputs = self.gst(ref_mel)
-        # gst_outputs = gst_outputs.
-        # repeat(1, transcript_outputs.size(1), 1)
+        # #############################################################################
 
-        embedded_speakers = self.speaker_embedding(emotion_id)[:, None]
-        embedded_speakers = embedded_speakers.repeat(1, transcript_outputs.size(1), 1)
-
-        encoder_outputs = torch.cat((transcript_outputs, embedded_style, embedded_speakers), dim=2)
+        encoder_outputs = torch.cat((transcript_outputs, embedded_style), dim=2) #, embedded_speakers), dim=2)
 
         # encoder_outputs = transcript_outputs + gst_outputs
 

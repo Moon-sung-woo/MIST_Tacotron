@@ -94,8 +94,12 @@ def parse_args(parser):
     parser.add_argument('--ref_mel', type=str, required=True,
                         help='style ref mel')
 
-    parser.add_argument('--n_speakers', type=int, default=32) #7로 바꿔도 괜찮은지 확인
+    parser.add_argument('--n_emotions', type=int, default=4) #총 4개 감정
+    parser.add_argument('--emotion_embedding_dim', type=int, default=128)
+
+    parser.add_argument('--n_speakers', type=int, default=40) #총 40명
     parser.add_argument('--speaker_embedding_dim', type=int, default=128)
+
     parser.add_argument('--emotion_id', type=int, default=1)
     parser.add_argument('--png_path', type=str, required=True)
     parser.add_argument('--z_latent_dim', type=int, default=32)

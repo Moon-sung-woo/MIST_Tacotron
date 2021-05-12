@@ -11,7 +11,6 @@ def make_sr16(wav_file):
 
     silence_audio_size = trim_hop_size * 3
 
-    wav_file = 'another_audio/nem00397.wav'
     data, sampling_rate = librosa.core.load(wav_file, sr)
     data = data / np.abs(data).max() * 0.999
     data_ = librosa.effects.trim(data, top_db=trim_top_db, frame_length=trim_fft_size, hop_length=trim_hop_size)[0]
@@ -21,4 +20,7 @@ def make_sr16(wav_file):
     write(wav_file, sr, data_)
 
     print('finish')
+
+wav_file = 'test_file/nem00397.wav'
+make_sr16(wav_file)
 

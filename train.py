@@ -84,13 +84,13 @@ def parse_args(parser):
     # reference encoder            #
     ################################
 
-    parser.add_argument('--E', type=int, default=256)
+    parser.add_argument('--E', type=int, default=512)
     parser.add_argument('--ref_enc_filters', nargs='*', default=[32, 32, 64, 64, 128, 128])
     parser.add_argument('--ref_enc_size', nargs='*', default=[3, 3])
     parser.add_argument('--ref_enc_strides', nargs='*', default=[2, 2])
     parser.add_argument('--ref_enc_pad', nargs='*', default=[1, 1])
-    parser.add_argument('--ref_enc_gru_size', type=int, default=256 // 2)
-    # parser.add_argument('--z_latent_dim', type=int, default=32)
+    parser.add_argument('--ref_enc_gru_size', type=int, default=512 // 2)
+    parser.add_argument('--z_latent_dim', type=int, default=32)
 
     # Style Token Layer
     parser.add_argument('--token_num', type=int, default=10)
@@ -98,7 +98,7 @@ def parse_args(parser):
 
     parser.add_argument('--n_mels', type=int, default=80)
 
-    # speaker id
+    # id
     parser.add_argument('--n_emotions', type=int, default=4) #총 4개 감정
     parser.add_argument('--emotion_embedding_dim', type=int, default=128)
 

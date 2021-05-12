@@ -62,7 +62,7 @@ class AddCoords(nn.Module):
                 input_tensor = input_tensor.cuda()
                 xx_channel = xx_channel.cuda()
                 yy_channel = yy_channel.cuda()
-            if False: #inference 할 때는 True로 바꿔줘야 돌아간다.
+            if True: #inference 할 때는 True로 바꿔줘야 돌아간다.
                 input_tensor = input_tensor.half()
                 xx_channel = xx_channel.half()
                 yy_channel = yy_channel.half()
