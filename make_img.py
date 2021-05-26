@@ -197,6 +197,12 @@ def load_mel(path):
     melspec = torch.squeeze(melspec, 0)
     return melspec
 
+# m = load_mel('dataset/ang/wav/acriil_ang_00000029.wav')
+# m = m.numpy()  # 이미지로 만들기 위해 넘파이로 변경
+# a, b = m.shape
+#
+# librosa.display.specshow(m)
+# plt.show()
 
 # 뉴럴 네트워크 모델을 불러옵니다.
 

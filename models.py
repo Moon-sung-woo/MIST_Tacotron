@@ -69,8 +69,8 @@ def get_model(model_name, model_config, cpu_run,
     if model_name == 'Tacotron2':
         if forward_is_infer:
             class Tacotron2__forward_is_infer(Tacotron2):
-                def forward(self, inputs, input_lengths, ref_mel, emotion_id, style_png):
-                    return self.infer(inputs, input_lengths, ref_mel, emotion_id, style_png)
+                def forward(self, inputs, input_lengths, ref_mel, emotion_id, style_png, speaker_id):
+                    return self.infer(inputs, input_lengths, ref_mel, emotion_id, style_png, speaker_id)
             model = Tacotron2__forward_is_infer(**model_config)
         else:
             model = Tacotron2(**model_config)

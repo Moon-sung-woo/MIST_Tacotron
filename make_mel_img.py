@@ -10,6 +10,7 @@ from common.utils import load_wav_to_torch
 
 import copy
 import PIL
+import os
 from PIL import Image
 import matplotlib.pyplot as plt
 import librosa.display
@@ -38,6 +39,7 @@ def get_png_name(pt_path):
     pt_path = pt_path.split('/')
     png_name = pt_path[1].replace('.wav', '.png')
     pt_path[1] = png_name
+    pt_path[0] = 'test_single_mel1_img'
     style_png_name = '/'.join(pt_path)
 
     return style_png_name
@@ -164,7 +166,7 @@ def style_reconstruction(cnn, style_img, input_img, iters):
 
             nonlocal flag, now_score
 
-            if style_score.item() < 10:
+            if style_score.item() < 1:
                 # print(f"[ Step: {run[0]} / Style loss: {style_score.item()}]")
                 # imshow(input_img)
                 flag = False
@@ -208,61 +210,66 @@ cnn_normalization_std = torch.tensor([0.229, 0.224, 0.225]).to(device)
 
 
 # style transfer
-wav_path = 'test_file/nem00397.wav'
+root_path = 'test_single_audio'
+file_list = os.listdir(root_path)
 
-# 저장할 png file 이름
-png_name = get_png_name(wav_path)
-print(png_name)
+for test_file in file_list:
+    wav_path = os.path.join(root_path, test_file)
+    print('wav_path : ', wav_path)
 
-# 기존 .pt파일을 png파일로 저장
-m = load_mel(wav_path)
-m = m.numpy() # 이미지로 만들기 위해 넘파이로 변경
-a, b = m.shape
+    # 저장할 png file 이름
+    png_name = get_png_name(wav_path)
+    print('png_name : ', png_name)
 
-librosa.display.specshow(m)
-plt.Figure()
-plt.axis('off'), plt.xticks([]), plt.yticks([])
-plt.tight_layout()
-plt.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0, wspace=0)
-plt.savefig(png_name, bbox_inches='tight', pad_inches=0)
-plt.close()
+    # 기존 .pt파일을 png파일로 저장
+    m = load_mel(wav_path)
+    m = m.numpy() # 이미지로 만들기 위해 넘파이로 변경
+    a, b = m.shape
 
-# 이미지 resize
-img = Image.open(png_name)
-shape_check_img = image_loader(png_name)
-resize_image = img.resize((int(b * 1.5), shape_check_img.shape[2]))
-resize_image.save(png_name)
-target_image = image_loader(png_name)
+    librosa.display.specshow(m)
+    plt.Figure()
+    plt.axis('off'), plt.xticks([]), plt.yticks([])
+    plt.tight_layout()
+    plt.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0, wspace=0)
+    plt.savefig(png_name, bbox_inches='tight', pad_inches=0)
+    plt.close()
 
-# 콘텐츠 이미지와 동일한 크기의 노이즈 이미지 준비하기
-input_img = torch.empty_like(target_image).uniform_(0, 1).to(device)
+    # 이미지 resize
+    img = Image.open(png_name)
+    shape_check_img = image_loader(png_name)
+    resize_image = img.resize((int(b * 1.5), shape_check_img.shape[2]))
+    resize_image.save(png_name)
+    target_image = image_loader(png_name)
 
-# style transfer 시작
-# style reconstruction 수행
-print('style 추출 중')
-output = style_reconstruction(cnn, style_img=target_image, input_img=input_img, iters=1000)
-print('style 추출 끝남')
+    # 콘텐츠 이미지와 동일한 크기의 노이즈 이미지 준비하기
+    input_img = torch.empty_like(target_image).uniform_(0, 1).to(device)
 
-# style transfer한 이미지 저장
-# matplotlib는 CPU 기반이므로 CPU로 옮기기
-image = output.cpu().clone()
-# torch.Tensor에서 사용되는 배치 목적의 차원(dimension) 제거
-image = image.squeeze(0)
-# PIL 객체로 변경
-image = transforms.ToPILImage()(image)
-# 이미지를 화면에 출력(matplotlib는 [0, 1] 사이의 값이라고 해도 정상적으로 처리)
+    # style transfer 시작
+    # style reconstruction 수행
+    print('style 추출 중')
+    output = style_reconstruction(cnn, style_img=target_image, input_img=input_img, iters=1000)
+    print('style 추출 끝남')
 
-fig = plt.figure()
-plt.imshow(image)
+    # style transfer한 이미지 저장
+    # matplotlib는 CPU 기반이므로 CPU로 옮기기
+    image = output.cpu().clone()
+    # torch.Tensor에서 사용되는 배치 목적의 차원(dimension) 제거
+    image = image.squeeze(0)
+    # PIL 객체로 변경
+    image = transforms.ToPILImage()(image)
+    # 이미지를 화면에 출력(matplotlib는 [0, 1] 사이의 값이라고 해도 정상적으로 처리)
 
-plt.axis('off'), plt.xticks([]), plt.yticks([])
-plt.tight_layout()
-plt.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0, wspace=0)
+    fig = plt.figure()
+    plt.imshow(image)
 
-plt.savefig(png_name, bbox_inches='tight', pad_inches=0)
-plt.close(fig)
+    plt.axis('off'), plt.xticks([]), plt.yticks([])
+    plt.tight_layout()
+    plt.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0, wspace=0)
 
-final_temp_img = Image.open(png_name)
-final_img_shape = image_loader(png_name)
-final_img = final_temp_img.resize((int(b * 1.5), output.shape[2]))
-final_img.save(png_name)
+    plt.savefig(png_name, bbox_inches='tight', pad_inches=0)
+    plt.close(fig)
+
+    final_temp_img = Image.open(png_name)
+    final_img_shape = image_loader(png_name)
+    final_img = final_temp_img.resize((int(b * 1.5), output.shape[2]))
+    final_img.save(png_name)

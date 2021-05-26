@@ -1,6 +1,8 @@
 from scipy.io.wavfile import write
 import librosa
 import numpy as np
+import os
+import glob
 
 def make_sr16(wav_file):
     sr = 16000
@@ -21,6 +23,15 @@ def make_sr16(wav_file):
 
     print('finish')
 
-wav_file = 'test_file/nem00397.wav'
-make_sr16(wav_file)
+path = 'inference_audio'
+
+file_list = os.listdir(path)
+
+#print(file_list)
+
+for file in file_list:
+    file_path = os.path.join(path, file)
+    wav_file_list = glob.glob(file_path + '/*.wav')
+    for wav_file in wav_file_list:
+        make_sr16(wav_file)
 

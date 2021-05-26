@@ -91,8 +91,10 @@ def parse_args(parser):
     parser.add_argument('--stft-hop-length', type=int, default=256,
                         help='STFT hop length for estimating audio length from mel size')
 
-    parser.add_argument('--ref_mel', type=str, required=True,
+    parser.add_argument('--ref_mel', type=str, required=True, #default='emotion_dataset/emotional-to-emotional/neb/wav/neb00209.wav',
                         help='style ref mel')
+    parser.add_argument('--speaker_id', type=str, required=True,
+                        help='speaker_id')
 
     parser.add_argument('--n_emotions', type=int, default=4) #총 4개 감정
     parser.add_argument('--emotion_embedding_dim', type=int, default=128)
@@ -222,6 +224,27 @@ def image_loader(img_path):
     image = loader(image)
     return image
 
+def create_speaker_lookup_table(audiopaths_and_text):
+    speaker_list = [x[3] for x in audiopaths_and_text]
+    speaker_ids = np.sort(np.unique(speaker_list))
+    d = {speaker_ids[i]: i for i in range(len(speaker_ids))}
+    return d
+
+def load_filepaths_and_text(dataset_path, filename, split="|"):
+    with open(filename, encoding='utf-8') as f:
+        def split_line(root, line):
+            parts = line.strip().split(split)
+            if len(parts) > 4:
+                raise Exception(
+                    "incorrect line format for file: {}".format(filename))
+            path = os.path.join(root, parts[0])
+            text = parts[1]
+            emotion = parts[2]
+            speaker = parts[3]
+            return path, text, emotion, speaker
+        filepaths_and_text = [split_line(dataset_path, line) for line in f]
+    return filepaths_and_text
+
 
 class MeasureTime():
     def __init__(self, measurements, key, cpu_run=False):
@@ -277,12 +300,20 @@ def main():
         sys.exit(1)
 
     #-------------------------------------------------------------------------------------------------------------------
+    file_path = 'filelists/multi_train_file_list.txt'
+    s_filelist = load_filepaths_and_text('/', file_path)
+    speaker_table = create_speaker_lookup_table(s_filelist)
+
     ref_mel = load_mel(args.ref_mel)
     id_list.append(args.emotion_id)
     emotion_id = torch.LongTensor(id_list).cuda()
-    # png_path = 'dataset/hap/img/acriil_hap_00000052.png'
     style_png = image_loader(args.png_path)
-    print(emotion_id)
+
+    input_speaker_id = args.speaker_id
+    speaker_id = speaker_table[input_speaker_id]
+    speaker_id = torch.LongTensor([speaker_id]).cuda()
+    print('emotion_id : ', emotion_id)
+    print('speaker_id : ', speaker_id)
     #-------------------------------------------------------------------------------------------------------------------
 
 
@@ -294,7 +325,7 @@ def main():
             input_lengths = input_lengths.cuda()
         for i in range(3):
             with torch.no_grad():
-                mel, mel_lengths, _ = jitted_tacotron2(sequence, input_lengths, ref_mel, emotion_id, style_png)
+                mel, mel_lengths, _ = jitted_tacotron2(sequence, input_lengths, ref_mel, emotion_id, style_png, speaker_id)
                 _ = waveglow(mel)
 
     measurements = {}
@@ -302,7 +333,7 @@ def main():
     sequences_padded, input_lengths = prepare_input_sequence(texts, args.cpu)
 
     with torch.no_grad(), MeasureTime(measurements, "tacotron2_time", args.cpu):
-        mel, mel_lengths, alignments = jitted_tacotron2(sequences_padded, input_lengths, ref_mel, emotion_id, style_png)
+        mel, mel_lengths, alignments = jitted_tacotron2(sequences_padded, input_lengths, ref_mel, emotion_id, style_png, speaker_id)
 
     with torch.no_grad(), MeasureTime(measurements, "waveglow_time", args.cpu):
         audios = waveglow(mel, sigma=args.sigma_infer)
@@ -321,16 +352,22 @@ def main():
     DLLogger.log(step=0, data={"denoiser_latency": measurements['denoiser_time']})
     DLLogger.log(step=0, data={"latency": (measurements['tacotron2_time']+measurements['waveglow_time']+measurements['denoiser_time'])})
 
+    print(args.png_path.split('/')[-1][:-4])
+    file_name_num = args.png_path.split('/')[-1][:-4]
+
+    # print(args.ref_mel.split('/')[-1][:-4])
+    # file_name_num = args.ref_mel.split('/')[-1][:-4]
+
     for i, audio in enumerate(audios):
 
         plt.imshow(alignments[i].float().data.cpu().numpy().T, aspect="auto", origin="lower")
-        figure_path = os.path.join(args.output, "alignment_"+str(i)+args.suffix+".png")
+        figure_path = os.path.join(args.output, "alignment_{}.png".format(file_name_num))
         plt.savefig(figure_path)
 
         audio = audio[:mel_lengths[i]*args.stft_hop_length]
         audio = audio/torch.max(torch.abs(audio))
         # audio_path = os.path.join(args.output, "audio_"+str(i)+args.suffix+".wav")
-        audio_path = os.path.join(args.output, "audio_{}.wav".format(args.emotion_id))
+        audio_path = os.path.join(args.output, "audio_{}.wav".format(file_name_num))
         write(audio_path, args.sampling_rate, audio.cpu().numpy())
 
     DLLogger.flush()
