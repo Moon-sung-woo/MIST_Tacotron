@@ -1,4 +1,4 @@
-# GST Tacotron2 KOREAN
+# MIST Tacotron2 KOREAN
 
 ## DATA
 ### 0. Code reference
